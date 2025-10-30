@@ -1,3 +1,51 @@
+local whitelist = {
+    ["DTH_KILLS"] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true, 
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true
+}
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+if not whitelist[LocalPlayer.Name] then
+    LocalPlayer:Kick("No estas en WhiteList para usar este script")
+end
+
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
