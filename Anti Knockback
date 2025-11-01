@@ -851,7 +851,7 @@ createAutoToolSwitch("Weight", "AutoWeight")
 createAutoToolSwitch("Pushups", "AutoPushups")
 createAutoToolSwitch("Handstands", "AutoHandstands")
 createAutoToolSwitch("Situps", "AutoSitups")
-
+createAutoToolSwitch("Stromp", "AutoStromp")
 
 autoEquipToolsFolder:AddSwitch("Auto Punch", function(Value)
     _G.fastHitActive = Value
@@ -909,7 +909,7 @@ autoEquipToolsFolder:AddSwitch("Fast Tools", function(Value)
         {"Pushups", "repTime", Value and 0 or 1},
         {"Weight", "repTime", Value and 0 or 1},
         {"Situps", "repTime", Value and 0 or 1}
-    }
+    }   
     
     local backpack = LocalPlayer:WaitForChild("Backpack")
     
