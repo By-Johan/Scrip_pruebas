@@ -853,6 +853,26 @@ createAutoToolSwitch("Handstands", "AutoHandstands")
 createAutoToolSwitch("Situps", "AutoSitups")
 createAutoToolSwitch("Stromp", "AutoStromp")
 
+autoEquipToolsFolder:AddSwitch("Stomp", function(Value)
+                    local stomp = player.Backpack:FindFirstChild("Stomp")
+                    if stomp then
+                        stomp.Parent = player.Character
+                        if stomp:FindFirstChild("attackTime") then
+                            stomp.attackTime.Value = 0
+                        end
+                    end
+                    player.muscleEvent:FireServer("stomp")
+
+                    if player.Character:FindFirstChild("Stomp") then
+                        player.Character.Stomp:Activate()
+                    end
+
+                    if tick() % 6 < 0.1 then
+                        local virtualUser = game:GetService("VirtualUser")
+                        virtualUser:CaptureController()
+                        virtualUser:ClickButton1(Vector2.new(500, 500))
+                    end
+
 autoEquipToolsFolder:AddSwitch("Auto Punch", function(Value)
     _G.fastHitActive = Value
     
@@ -1213,35 +1233,6 @@ end)
 
 local Wild_Wizard = dropdown:Add("Wild Wizard")
 local Powerful_Monster = dropdown:Add("Mighty Monster")
-
-
-Killer:AddSwitch("Anti Knockback", function(Value)
-    safeCall(function()
-        if Value then
-            local playerName = game.Players.LocalPlayer.Name
-            local rootPart = game.Workspace:FindFirstChild(playerName):FindFirstChild("HumanoidRootPart")
-            if rootPart then
-                local bodyVelocity = Instance.new("BodyVelocity")
-                bodyVelocity.MaxForce = Vector3.new(100000, 0, 100000)
-                bodyVelocity.Velocity = Vector3.new(0, 0, 0)
-                bodyVelocity.P = 1250
-                bodyVelocity.Parent = rootPart
-            end
-        else
-            local playerName = game.Players.LocalPlayer.Name
-            local character = game.Workspace:FindFirstChild(playerName)
-            if character then
-                local rootPart = character:FindFirstChild("HumanoidRootPart")
-                if rootPart then
-                    local existingVelocity = rootPart:FindFirstChild("BodyVelocity")
-                    if existingVelocity and existingVelocity.MaxForce == Vector3.new(100000, 0, 100000) then
-                        existingVelocity:Destroy()
-                    end
-                end
-            end
-        end
-    end)
-end)
 
 Killer:AddSwitch("Lock Position", function(Value)
     if Value then
