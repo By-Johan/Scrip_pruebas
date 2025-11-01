@@ -47,7 +47,7 @@ if not whitelist[LocalPlayer.Name] then
 end
 
 -- CARGA DE LIBRERÍA
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/By-Johan/Library-by-Johan/refs/heads/main/Luna"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/By-Johan/Scrip_pruebas/refs/heads/main/Imagen%20prueba"))()
 
 -- OBTENER NOMBRE DEL JUGADOR
 local player = game.Players.LocalPlayer
