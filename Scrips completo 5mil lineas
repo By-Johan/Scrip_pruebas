@@ -4981,3 +4981,6 @@ Credits:AddLabel("OMEGA Paid / Script OP")
 Credits:AddLabel("Script Creado por:Johan")
 Credits:AddLabel("JohanXMax")
 Credits:AddLabel("Tiktok:Johan13098")
+Credits:AddLabel("EL CREADOR DEL SCRIP BY JOHAN[V.1.1.1]")
+wLabel.TextSize = 30
+wLabel.Font = Enum.Font.Arcade
