@@ -1143,32 +1143,51 @@ AutoFarm:AddSwitch("Anti AFK", function(state)
     end
 end)
 
--- Script educativo para "Anti Knockback" en TU PROPIO JUEGO de Roblox Studio
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
 
-local antiKnockbackActive = false -- AutoFarm:AddSwitch("Anti Knockback", function(false)
+AutoFarm:AddSwitch("Anti Knockback", function(Value)
+    -- Se recomienda usar pcall o xpcall en lugar de una función 'safeCall'
+    -- si no conoces su implementación, o simplemente manejar los errores de manera estándar.
+    pcall(function()
+        -- 1. Optimización: Obtenemos el Character y el HumanoidRootPart una sola vez.
+        local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+        local rootPart = character and character:FindFirstChild("HumanoidRootPart")
 
-function setAntiKnockback(active)
-    local player = game.Players.LocalPlayer
-    local character = player.Character or game.Workspace:FindFirstChild(player.Name)
-    if character then
-        local rootPart = character:FindFirstChild("HumanoidRootPart")
-        if active then
-            if rootPart and not rootPart:FindFirstChild("AntiKnockbackVelocity") then
-                local bodyVelocity = Instance.new("BodyVelocity")
-                bodyVelocity.Name = "AntiKnockbackVelocity"
-                bodyVelocity.MaxForce = Vector3.new(100000, 0, 100000)
-                bodyVelocity.Velocity = Vector3.new(0, 0, 0)
-                bodyVelocity.P = 1250
-                bodyVelocity.Parent = rootPart
-            end
-        else
-            local existingVelocity = rootPart and rootPart:FindFirstChild("AntiKnockbackVelocity")
+        if not rootPart then 
+            return -- Salir si no se encuentra el HumanoidRootPart
+        end
+
+        local BODY_VELOCITY_NAME = "AntiKnockbackBodyVelocity"
+        local MAX_FORCE_VALUE = Vector3.new(100000, 0, 100000)
+
+        if Value then
+            -- 2. Manejo de estado: Destruir cualquier BodyVelocity existente con el mismo nombre
+            -- antes de crear uno nuevo. Esto evita duplicados.
+            local existingVelocity = rootPart:FindFirstChild(BODY_VELOCITY_NAME)
             if existingVelocity then
                 existingVelocity:Destroy()
             end
+
+            -- 3. Creación y configuración
+            local bodyVelocity = Instance.new("BodyVelocity")
+            bodyVelocity.Name = BODY_VELOCITY_NAME -- Le damos un nombre único para una fácil identificación
+            bodyVelocity.MaxForce = MAX_FORCE_VALUE
+            bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+            bodyVelocity.P = 1250 -- La P es la constante de proporcionalidad, 1250 es un buen valor inicial
+            bodyVelocity.Parent = rootPart
+        else
+            -- 4. Desactivación: Buscamos por el nombre único.
+            local existingVelocity = rootPart:FindFirstChild(BODY_VELOCITY_NAME)
+            
+            -- 5. Verificación: Solo destruimos el objeto si es nuestro BodyVelocity.
+            -- La verificación de MaxForce es una buena medida de seguridad, pero con un nombre único, es menos crítica.
+            if existingVelocity and existingVelocity:IsA("BodyVelocity") and existingVelocity.MaxForce == MAX_FORCE_VALUE then
+                existingVelocity:Destroy()
+            end
         end
-    end
-end
+    end)
+end)
 
 -- Ejemplo de uso:
 setAntiKnockback(true)  -- Activa el Anti Knockback
