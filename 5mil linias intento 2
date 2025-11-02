@@ -925,6 +925,108 @@ autoEquipToolsFolder:AddSwitch("Fast Tools", function(Value)
         end
     end
 end)
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+
+local SNACK_CONFIG = {
+    ["Protein Shake"] = {time = 0.5},
+    ["Energy Shake"] = {time = 0.5},
+    ["TOUGH Bar"] = {time = 0.5},
+    ["ULTRA Shake"] = {time = 0.5},
+    ["Energy Bar"] = {time = 0.5},
+    ["Protein Egg"] = {time = 1800, displayName = "Protein Egg 30 Minuts"},
+    ["Tropical Shake"] = {time = 900, displayName = "Tropical Shake 15 Minuts"},
+}
+
+local activeSnacks = {}
+local snackConnections = {}
+
+local autoSnackFolder = mainTab:AddFolder("  Auto Snacks")
+
+local function equipAndUse(itemName)
+    local character = player.Character
+    local backpack = player.Backpack
+    
+    if not character or not backpack or player.Humanoid.Health <= 0 then 
+        return 
+    end
+    
+    local tool = backpack:FindFirstChild(itemName)
+    
+    if tool then
+        tool.Parent = character
+        task.wait(0.1)
+        
+        local equippedTool = character:FindFirstChild(itemName)
+        if equippedTool then
+            equippedTool:Activate()
+            
+            local viewportSize = workspace.CurrentCamera.ViewportSize
+            local x, y = viewportSize.X / 2, viewportSize.Y / 2
+            
+            VirtualInputManager:SendMouseButtonEvent(x, y, 0, true, game, 1)
+            task.wait(0.01)
+            VirtualInputManager:SendMouseButtonEvent(x, y, 0, false, game, 1)
+        end
+    end
+end
+
+local function stopSnackLoop(itemName)
+    activeSnacks[itemName] = false
+    if snackConnections[itemName] then
+        task.cancel(snackConnections[itemName])
+        snackConnections[itemName] = nil
+    end
+end
+
+local function startSnackLoop(itemName)
+    stopSnackLoop(itemName)
+    
+    local config = SNACK_CONFIG[itemName]
+    
+    snackConnections[itemName] = task.spawn(function()
+        local waitTime = config.time or 0.5
+        local isLongWait = waitTime > 1
+
+        while activeSnacks[itemName] do
+            local backpack = player.Backpack
+            
+            if backpack and backpack:FindFirstChild(itemName) then
+                equipAndUse(itemName)
+
+                if isLongWait then
+                    print(itemName .. " usado! Esperando " .. math.ceil(waitTime / 60) .. " minutos...")
+                    task.wait(waitTime)
+                else
+                    task.wait(0.5) 
+                end
+            else
+                stopSnackLoop(itemName)
+                print("No queda más " .. itemName .. " disponible!")
+                break
+            end
+            
+            if not isLongWait then
+                task.wait(0.1) 
+            end
+        end
+    end)
+end
+
+for snackName, config in pairs(SNACK_CONFIG) do
+    local switchName = config.displayName or snackName 
+    
+    autoSnackFolder:AddSwitch(switchName, function(state)
+        activeSnacks[snackName] = state
+        if state then
+            startSnackLoop(snackName)
+        else
+            stopSnackLoop(snackName)
+        end
+    end)
+end
 
 AutoFarm:AddSwitch("Lock Position", function(Value)
     if Value then
