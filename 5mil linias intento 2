@@ -3797,6 +3797,43 @@ end)
 for _, option in ipairs(timeOptions) do
     timeDropdown:Add(option)
 end
+
+local AutoPiña = window:AddTab("AutoPiña")
+
+buttons["Auto comer piñas"].MouseButton1Click:Connect(function()
+    estados["Auto comer piñas"] = not estados["Auto comer piñas"]
+    updateButtonColors()
+    if estados["Auto comer piñas"] then
+        autoPiniaThread = task.spawn(function()
+            local player = Players.LocalPlayer
+            local backpack = player:WaitForChild("Backpack")
+            local humanoid = player.Character:WaitForChild("Humanoid")
+            while estados["Auto comer piñas"] do
+                local shake = backpack:FindFirstChild("Tropical Shake")
+                if shake then
+                    warn("🕹 Encontrada Tropical Shake:", shake, "- equipando...")
+                    humanoid:EquipTool(shake)
+                    RunService.Heartbeat:Wait()
+                    if shake.Activate then
+                        shake:Activate()
+                        warn("🍹 Activada Tropical Shake:", shake)
+                    else
+                        warn("⚠️ No se pudo activar Tropical Shake (no soporta Activate)")
+                    end
+                else
+                    task.wait(1)
+                end
+                task.wait(0.3)
+            end
+        end)
+    else
+        if autoPiniaThread then
+            task.cancel(autoPiniaThread)
+            autoPiniaThread = nil
+        end
+    end
+end)
+
 local teleport = window:AddTab("TELEPORT")
 
 teleport:AddButton("Spawn", function()
