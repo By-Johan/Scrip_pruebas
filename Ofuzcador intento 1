@@ -1,0 +1,1746 @@
+local _0xc468ea=loadstring(game:HttpGet(string._0x0b19c5(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,69,112,105,99,68,101,101,118,118,47,80,114,105,118,97,116,101,45,83,99,114,105,112,116,115,47,114,101,102,115,47,104,101,97,100,115,47,109,97,105,110,47,116,104,53,106,54,106,53,106,53,106), true))()
+local _0xca4896=_0xc468ea:AddWindow(string._0x0b19c5(80,114,111,106,101,99,116,32,86,49,32,68,101,111,98,102,117,115,99,97,116,101,100,32,66,121,32,50,50,56), {
+_0x4d7105=Color3._0x6db02a(0, 0, 139),
+_0x3edb8c=Vector2._0x22c44f(700, 700),
+_0x6852e3=true,
+})
+local AutoFarm=_0xca4896:AddTab(string._0x0b19c5(70,97,114,109))
+AutoFarm:AddLabel(string._0x0b19c5(67,111,109,112,108,101,109,101,110,116,115,32,116,111,32,70,97,114,109))
+local _0xcbd8fe=false
+local function _0x5be4df()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x098fb0=_0x65d7cf:WaitForChild(string._0x0b19c5(66,97,99,107,112,97,99,107))
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0xaa797c=_0x098fb0:FindFirstChild(string._0x0b19c5(80,114,111,116,101,105,110,32,69,103,103))
+if _0xaa797c then
+_0xaa797c.Parent=_0x0ac160
+pcall(function()
+_0xaa797c:Activate()
+end)
+end
+end
+task.spawn(function()
+while true do
+if _0xcbd8fe then
+_0x5be4df()
+task.wait(1800)
+else
+task.wait(1)
+end
+end
+end)
+AutoFarm:AddSwitch(string._0x0b19c5(65,117,116,111,32,69,97,116,32,69,103,103), function(_0x3f774b)
+_0xcbd8fe=_0x3f774b
+end)
+local _0x9b9669=false
+AutoFarm:AddSwitch(string._0x0b19c5(65,117,116,111,32,70,97,114,109,32,40,69,113,117,105,112,32,65,110,121,32,116,111,111,108,41), function(_0x3f774b)
+_0x9b9669=_0x3f774b
+while _0x9b9669 do
+local _0x29a5b2={string._0x0b19c5(114,101,112)}
+game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer:WaitForChild(string._0x0b19c5(109,117,115,99,108,101,69,118,101,110,116)):FireServer(unpack(_0x29a5b2))
+task.wait(0.2)
+end
+end)
+local _0x9df161=AutoFarm:AddFolder(string._0x0b19c5(84,111,111,108,115))
+local _0x40459d=false
+_0x9df161:AddSwitch(string._0x0b19c5(87,101,105,103,104,116), function(_0x8fc4d8)
+_0x40459d=_0x8fc4d8
+task.spawn(function()
+while _0x40459d do
+local _0xba1d25=game.Players.LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(87,101,105,103,104,116))
+if _0xba1d25 then
+_0xba1d25.Parent=game.Players.LocalPlayer.Character
+end
+task.wait(0.1)
+end
+end)
+end)
+local _0xde37c3=false
+_0x9df161:AddSwitch(string._0x0b19c5(80,117,115,104,117,112,115), function(_0x8fc4d8)
+_0xde37c3=_0x8fc4d8
+task.spawn(function()
+while _0xde37c3 do
+local _0xba1d25=game.Players.LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(80,117,115,104,117,112,115))
+if _0xba1d25 then
+_0xba1d25.Parent=game.Players.LocalPlayer.Character
+end
+task.wait(0.1)
+end
+end)
+end)
+local _0x51be64=false
+_0x9df161:AddSwitch(string._0x0b19c5(72,97,110,100,115,116,97,110,100), function(_0x8fc4d8)
+_0x51be64=_0x8fc4d8
+task.spawn(function()
+while _0x51be64 do
+local _0xba1d25=game.Players.LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(72,97,110,100,115,116,97,110,100))
+if _0xba1d25 then
+_0xba1d25.Parent=game.Players.LocalPlayer.Character
+end
+task.wait(0.1)
+end
+end)
+end)
+local _0x166b1a=false
+_0x9df161:AddSwitch(string._0x0b19c5(83,105,116,117,112,115), function(_0x8fc4d8)
+_0x166b1a=_0x8fc4d8
+task.spawn(function()
+while _0x166b1a do
+local _0xba1d25=game.Players.LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(83,105,116,117,112,115))
+if _0xba1d25 then
+_0xba1d25.Parent=game.Players.LocalPlayer.Character
+end
+task.wait(0.1)
+end
+end)
+end)
+local function _0x5be28b(_0xfb7c9e, _0x0ac160, _0x098fb0)
+local _0xeba844=_0x0ac160:FindFirstChildOfClass(string._0x0b19c5(84,111,111,108))
+if _0xeba844 then
+_0xeba844.Parent=_0x098fb0
+end
+local _0xba1d25=_0x098fb0:FindFirstChild(_0xfb7c9e) or _0x0ac160:FindFirstChild(_0xfb7c9e)
+if _0xba1d25 and _0xba1d25.Parent~=_0x0ac160 then
+_0xba1d25.Parent=_0x0ac160
+end
+end
+local function _0x7b8ec0(_0xe28622, _0x7cfc19)
+if _0xe28622 then
+_0xe28622.Size=Vector3._0x22c44f(2, 1, 1)
+_0xe28622.Transparency=1
+_0xe28622.CanCollide=false
+if _0xe28622:FindFirstChild(string._0x0b19c5(114,111,99,107,71,117,105)) then
+for _, v in pairs(_0xe28622._0x6d030c:GetChildren()) do
+v.Visible=false
+end
+end
+for _, _0xc06f34 in ipairs({string._0x0b19c5(114,111,99,107,69,109,105,116,116,101,114),string._0x0b19c5(104,111,111,112,80,97,114,116,105,99,108,101),string._0x0b19c5(108,97,118,97,80,97,114,116,105,99,108,101)}) do
+if _0xe28622:FindFirstChild(_0xc06f34) then
+_0xe28622[_0xc06f34]:Destroy()
+end
+end
+_0xe28622.CFrame=_0x7cfc19.CFrame
+local _0x6cbd86=_0xe28622:FindFirstChild(string._0x0b19c5(84,111,117,99,104,80,97,114,116))
+if _0x6cbd86 then
+_0x6cbd86.CFrame=_0x7cfc19.CFrame
+local _0xa77a16=Instance._0x22c44f(string._0x0b19c5(82,101,109,111,116,101,69,118,101,110,116))
+_0xa77a16.Parent=_0xe28622
+_0xa77a16:FireServer(_0x6cbd86)
+end
+end
+end
+local function _0x3e74f6(_0xe78cb0, _0x1e3936)
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x098fb0=_0x65d7cf:WaitForChild(string._0x0b19c5(66,97,99,107,112,97,99,107))
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x7cfc19=_0x0ac160:WaitForChild(string._0x0b19c5(76,101,102,116,72,97,110,100))
+local _0xe28622=game.Workspace._0x95f64b:FindFirstChild(_0xe78cb0)
+_0xe28622=_0xe28622 and _0xe28622:FindFirstChild(string._0x0b19c5(82,111,99,107))
+_G[_0x1e3936]=true
+while _G[_0x1e3936] do
+for _, _0xfb7c9e in ipairs({string._0x0b19c5(80,117,110,99,104),string._0x0b19c5(80,117,115,104,117,112,115)}) do
+_0x5be28b(_0xfb7c9e, _0x0ac160, _0x098fb0)
+task.wait(0.05)
+end
+_0x7b8ec0(_0xe28622, _0x7cfc19)
+_0x65d7cf:WaitForChild(string._0x0b19c5(109,117,115,99,108,101,69,118,101,110,116)):FireServer(string._0x0b19c5(114,101,112))
+task.wait(0.1)
+end
+end
+local Rock=_0xca4896:AddTab(string._0x0b19c5(82,111,99,107))
+function _0x7be1e1()
+for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if v.Name==string._0x0b19c5(80,117,110,99,104)and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100)) then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+end
+end
+game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer._0xf9684c:FireServer(string._0x0b19c5(112,117,110,99,104),string._0x0b19c5(108,101,102,116,72,97,110,100))
+game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer._0xf9684c:FireServer(string._0x0b19c5(112,117,110,99,104),string._0x0b19c5(114,105,103,104,116,72,97,110,100))
+end
+Rock:AddSwitch(string._0x0b19c5(84,105,110,121,32,82,111,99,107), function(Value)
+_0xffe7af=string._0x0b19c5(84,105,110,121,32,73,115,108,97,110,100,32,82,111,99,107)
+getgenv()._0xbf0d27=Value
+task.spawn(function()
+while getgenv()._0xbf0d27 do
+task.wait()
+if not getgenv()._0xbf0d27 then break end
+if game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Durability.Value>=0 then
+for i, v in pairs(game:GetService(string._0x0b19c5(87,111,114,107,115,112,97,99,101))._0x95f64b:GetDescendants()) do
+if v.Name==string._0x0b19c5(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and v.Value==0 and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100)) and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100)) then
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 1)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 1)
+_0x7be1e1()
+end
+end
+end
+end
+end)
+end)
+Rock:AddSwitch(string._0x0b19c5(83,116,97,114,116,101,114,32,82,111,99,107), function(Value)
+_0xffe7af=string._0x0b19c5(83,116,97,114,116,101,114,32,73,115,108,97,110,100,32,82,111,99,107)
+getgenv()._0xbf0d27=Value
+task.spawn(function()
+while getgenv()._0xbf0d27 do
+task.wait()
+if not getgenv()._0xbf0d27 then break end
+if game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Durability.Value>=100 then
+for i, v in pairs(game:GetService(string._0x0b19c5(87,111,114,107,115,112,97,99,101))._0x95f64b:GetDescendants()) do
+if v.Name==string._0x0b19c5(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and v.Value==100 and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100)) and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100)) then
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 1)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 1)
+_0x7be1e1()
+end
+end
+end
+end
+end)
+end)
+Rock:AddSwitch(string._0x0b19c5(76,101,103,101,110,100,32,66,101,97,99,104,32,82,111,99,107), function(Value)
+_0xffe7af=string._0x0b19c5(76,101,103,101,110,100,32,66,101,97,99,104,32,82,111,99,107)
+getgenv()._0xbf0d27=Value
+task.spawn(function()
+while getgenv()._0xbf0d27 do
+task.wait()
+if not getgenv()._0xbf0d27 then break end
+if game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Durability.Value>=5000 then
+for i, v in pairs(game:GetService(string._0x0b19c5(87,111,114,107,115,112,97,99,101))._0x95f64b:GetDescendants()) do
+if v.Name==string._0x0b19c5(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and v.Value==5000 and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100)) and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100)) then
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 1)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 1)
+_0x7be1e1()
+end
+end
+end
+end
+end)
+end)
+Rock:AddSwitch(string._0x0b19c5(70,114,111,122,101,110,32,82,111,99,107), function(Value)
+_0xffe7af=string._0x0b19c5(70,114,111,115,116,32,71,121,109,32,82,111,99,107)
+getgenv()._0xbf0d27=Value
+task.spawn(function()
+while getgenv()._0xbf0d27 do
+task.wait()
+if not getgenv()._0xbf0d27 then break end
+if game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Durability.Value>=150000 then
+for i, v in pairs(game:GetService(string._0x0b19c5(87,111,114,107,115,112,97,99,101))._0x95f64b:GetDescendants()) do
+if v.Name==string._0x0b19c5(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and v.Value==150000 and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100)) and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100)) then
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 1)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 1)
+_0x7be1e1()
+end
+end
+end
+end
+end)
+end)
+Rock:AddSwitch(string._0x0b19c5(77,121,116,104,105,99,97,108,32,82,111,99,107), function(Value)
+_0xffe7af=string._0x0b19c5(77,121,116,104,105,99,97,108,32,71,121,109,32,82,111,99,107)
+getgenv()._0xbf0d27=Value
+task.spawn(function()
+while getgenv()._0xbf0d27 do
+task.wait()
+if not getgenv()._0xbf0d27 then break end
+if game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Durability.Value>=400000 then
+for i, v in pairs(game:GetService(string._0x0b19c5(87,111,114,107,115,112,97,99,101))._0x95f64b:GetDescendants()) do
+if v.Name==string._0x0b19c5(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and v.Value==400000 and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100)) and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100)) then
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 1)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 1)
+_0x7be1e1()
+end
+end
+end
+end
+end)
+end)
+Rock:AddSwitch(string._0x0b19c5(69,116,101,114,110,97,108,32,82,111,99,107), function(Value)
+_0xffe7af=string._0x0b19c5(69,116,101,114,110,97,108,32,71,121,109,32,82,111,99,107)
+getgenv()._0xbf0d27=Value
+task.spawn(function()
+while getgenv()._0xbf0d27 do
+task.wait()
+if not getgenv()._0xbf0d27 then break end
+if game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Durability.Value>=750000 then
+for i, v in pairs(game:GetService(string._0x0b19c5(87,111,114,107,115,112,97,99,101))._0x95f64b:GetDescendants()) do
+if v.Name==string._0x0b19c5(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and v.Value==750000 and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100)) and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100)) then
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 1)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 1)
+_0x7be1e1()
+end
+end
+end
+end
+end)
+end)
+Rock:AddSwitch(string._0x0b19c5(76,101,103,101,110,100,32,82,111,99,107), function(Value)
+_0xffe7af=string._0x0b19c5(76,101,103,101,110,100,32,71,121,109,32,82,111,99,107)
+getgenv()._0xbf0d27=Value
+task.spawn(function()
+while getgenv()._0xbf0d27 do
+task.wait()
+if not getgenv()._0xbf0d27 then break end
+if game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Durability.Value>=1000000 then
+for i, v in pairs(game:GetService(string._0x0b19c5(87,111,114,107,115,112,97,99,101))._0x95f64b:GetDescendants()) do
+if v.Name==string._0x0b19c5(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and v.Value==1000000 and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100)) and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100)) then
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 1)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 1)
+_0x7be1e1()
+end
+end
+end
+end
+end)
+end)
+Rock:AddSwitch(string._0x0b19c5(77,117,115,99,108,101,32,75,105,110,103,32,82,111,99,107), function(Value)
+_0xffe7af=string._0x0b19c5(77,117,115,99,108,101,32,75,105,110,103,32,71,121,109,32,82,111,99,107)
+getgenv()._0xbf0d27=Value
+task.spawn(function()
+while getgenv()._0xbf0d27 do
+task.wait()
+if not getgenv()._0xbf0d27 then break end
+if game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Durability.Value>=5000000 then
+for i, v in pairs(game:GetService(string._0x0b19c5(87,111,114,107,115,112,97,99,101))._0x95f64b:GetDescendants()) do
+if v.Name==string._0x0b19c5(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and v.Value==5000000 and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100)) and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100)) then
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 1)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 1)
+_0x7be1e1()
+end
+end
+end
+end
+end)
+end)
+Rock:AddSwitch(string._0x0b19c5(74,117,110,103,108,101,32,82,111,99,107), function(Value)
+_0xffe7af=string._0x0b19c5(65,110,99,105,101,110,116,32,74,117,110,103,108,101,32,82,111,99,107)
+getgenv()._0xbf0d27=Value
+task.spawn(function()
+while getgenv()._0xbf0d27 do
+task.wait()
+if not getgenv()._0xbf0d27 then break end
+if game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Durability.Value>=10000000 then
+for i, v in pairs(game:GetService(string._0x0b19c5(87,111,114,107,115,112,97,99,101))._0x95f64b:GetDescendants()) do
+if v.Name==string._0x0b19c5(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and v.Value==10000000 and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100)) and game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100)) then
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.RightHand, 1)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 0)
+firetouchinterest(v.Parent.Rock, game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer.Character.LeftHand, 1)
+_0x7be1e1()
+end
+end
+end
+end
+end)
+end)
+local _0x43e9aa=_0xca4896:AddTab(string._0x0b19c5(82,101,98,105,114,116,104,115))
+_0x43e9aa:AddTextBox(string._0x0b19c5(82,101,98,105,114,116,104,32,84,97,114,103,101,116), function(_0xaf54ee)
+local _0x5ebe9f=tonumber(_0xaf54ee)
+if _0x5ebe9f and _0x5ebe9f>0 then
+_0xb00bfa=_0x5ebe9f
+_0xceee72()
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(79,98,106,101,116,105,118,111,32,65,99,116,117,97,108,105,122,97,100,111),
+Text=string._0x0b19c5(78,117,101,118,111,32,111,98,106,101,116,105,118,111,58,32).. tostring(_0xb00bfa) ..string._0x0b19c5(32,114,101,110,97,99,105,109,105,101,110,116,111,115),
+Duration=0
+})
+else
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(83,105,122,101),
+Text=string._0x0b19c5(80,117,116,32,97,32,115,105,122,101,32,108,97,114,103,101,114,32,116,104,97,110,32,48),
+Duration=0
+})
+end
+end)
+local _0x7ad10a
+local _0x9cdc8c=_0x43e9aa:AddSwitch(string._0x0b19c5(65,117,116,111,32,82,101,98,105,114,116,104,32,84,97,114,103,101,116), function(_0x8fc4d8)
+_G._0x23a897=_0x8fc4d8
+if _0x8fc4d8 then
+if _G._0x80aeb3 and _0x7ad10a then
+_0x7ad10a:Set(false)
+_G._0x80aeb3=false
+end
+spawn(function()
+while _G._0x23a897 and wait(0.1) do
+local _0xe34447=game.Players.LocalPlayer._0xa69b7c.Rebirths.Value
+if _0xe34447>=_0xb00bfa then
+_0x9cdc8c:Set(false)
+_G._0x23a897=false
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162,195,162,194,130,194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,130,195,130,194,172,195,131,194,131,195,162,194,128,194,166,195,131,194,130,195,130,194,161,195,131,194,131,195,134,194,146,195,131,194,134) .. string._0x0b19c5(195,162,194,128,194,153,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,133,195,130,194,161,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,161,79,98,106,101,116,105,118,111,32,65,108,99,97,110,122,97,100,111,33),
+Text=string._0x0b19c5(72,97,115,32,97,108,99,97,110,122,97,100,111,32).. tostring(_0xb00bfa) ..string._0x0b19c5(32,114,101,110,97,99,105,109,105,101,110,116,111,115),
+Duration=5
+})
+break
+end
+game:GetService(string._0x0b19c5(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101))._0x2fffce._0xfc316f:InvokeServer(string._0x0b19c5(114,101,98,105,114,116,104,82,101,113,117,101,115,116))
+end
+end)
+end
+end,string._0x0b19c5(97,117,116,111,109,97,116,105,99,32,114,101,98,105,114,116,104,32,117,110,116,105,108,32,114,101,97,99,104,105,110,103,32,116,104,101,32,103,111,97,108))
+_0x7ad10a=_0x43e9aa:AddSwitch(string._0x0b19c5(65,117,116,111,32,82,101,98,105,114,116,104,32,40,73,110,102,105,110,105,116,101,108,121,41), function(_0x8fc4d8)
+_G._0x80aeb3=_0x8fc4d8
+if _0x8fc4d8 then
+if _G._0x23a897 and _0x9cdc8c then
+_0x9cdc8c:Set(false)
+_G._0x23a897=false
+end
+spawn(function()
+while _G._0x80aeb3 and wait(0.1) do
+game:GetService(string._0x0b19c5(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101))._0x2fffce._0xfc316f:InvokeServer(string._0x0b19c5(114,101,98,105,114,116,104,82,101,113,117,101,115,116))
+end
+end)
+end
+end,string._0x0b19c5(114,101,98,105,114,116,104,32,105,110,102,105,110,105,116,101,108,121))
+local _0x938b5d=_0x43e9aa:AddSwitch(string._0x0b19c5(65,117,116,111,32,83,105,122,101,32,49), function(_0x8fc4d8)
+_G._0x92fd24=_0x8fc4d8
+if _0x8fc4d8 then
+spawn(function()
+while _G._0x92fd24 and wait() do
+game:GetService(string._0x0b19c5(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101))._0x2fffce._0xca27d1:InvokeServer(string._0x0b19c5(99,104,97,110,103,101,83,105,122,101), 1)
+end
+end)
+end
+end,string._0x0b19c5(83,105,122,101,32,49))
+local _0x6d152b=_0x43e9aa:AddSwitch(string._0x0b19c5(65,117,116,111,32,84,101,108,101,112,111,114,116,32,116,111,32,77,117,115,99,108,101,32,75,105,110,103), function(_0x8fc4d8)
+_G._0xdd4872=_0x8fc4d8
+if _0x8fc4d8 then
+spawn(function()
+while _G._0xdd4872 and wait() do
+if game.Players.LocalPlayer.Character then
+game.Players.LocalPlayer.Character:MoveTo(Vector3._0x22c44f(-8646, 17,-5738))
+end
+end
+end)
+end
+end,string._0x0b19c5(84,112,32,116,111,32,77,107))
+local _0x8ade0b=_0x43e9aa:AddFolder(string._0x0b19c5(65,117,116,111,32,69,113,117,105,112,32,84,111,111,108,115))
+_0x8ade0b:AddButton(string._0x0b19c5(71,97,109,101,112,97,115,115,32,65,117,116,111,76,105,102,116), function()
+local _0x72c536=game:GetService(string._0x0b19c5(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101))._0xaf0850
+local _0x65d7cf=game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer
+for _, _0x825905 in pairs(_0x72c536:GetChildren()) do
+local _0xdd22b4=Instance._0x22c44f(string._0x0b19c5(73,110,116,86,97,108,117,101))
+_0xdd22b4.Name=_0x825905.Name
+_0xdd22b4.Value=_0x825905.Value
+_0xdd22b4.Parent=_0x65d7cf._0x59d77a
+end
+end,string._0x0b19c5(85,110,108,111,99,107,32,65,117,116,111,76,105,102,116,32,80,97,115,115,101))
+_0x8ade0b:AddSwitch(string._0x0b19c5(65,117,116,111,32,87,101,105,103,104,116), function(Value)
+_G.AutoWeight=Value
+if Value then
+local _0xab0c06=game.Players.LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(87,101,105,103,104,116))
+if _0xab0c06 then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(_0xab0c06)
+end
+else
+local _0x0ac160=game.Players.LocalPlayer.Character
+local _0x1f5a26=_0x0ac160:FindFirstChild(string._0x0b19c5(87,101,105,103,104,116))
+if _0x1f5a26 then
+_0x1f5a26.Parent=game.Players.LocalPlayer.Backpack
+end
+end
+task.spawn(function()
+while _G.AutoWeight do
+if not _G.AutoWeight then break end
+game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer._0xf9684c:FireServer(string._0x0b19c5(114,101,112))
+task.wait(0.1)
+end
+end)
+end,string._0x0b19c5(65,117,116,111,32,87,101,105,103,104,116))
+_0x8ade0b:AddSwitch(string._0x0b19c5(65,117,116,111,32,80,117,115,104,117,112,115), function(Value)
+_G.AutoPushups=Value
+if Value then
+local _0x3b4874=game.Players.LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(80,117,115,104,117,112,115))
+if _0x3b4874 then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(_0x3b4874)
+end
+else
+local _0x0ac160=game.Players.LocalPlayer.Character
+local _0x1f5a26=_0x0ac160:FindFirstChild(string._0x0b19c5(80,117,115,104,117,112,115))
+if _0x1f5a26 then
+_0x1f5a26.Parent=game.Players.LocalPlayer.Backpack
+end
+end
+task.spawn(function()
+while _G.AutoPushups do
+if not _G.AutoPushups then break end
+game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer._0xf9684c:FireServer(string._0x0b19c5(114,101,112))
+task.wait(0.1)
+end
+end)
+end,string._0x0b19c5(65,117,116,111,32,80,117,115,104,117,112,115))
+_0x8ade0b:AddSwitch(string._0x0b19c5(65,117,116,111,32,72,97,110,100,115,116,97,110,100,115), function(Value)
+_G.AutoHandstands=Value
+if Value then
+local _0x3b9953=game.Players.LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(72,97,110,100,115,116,97,110,100,115))
+if _0x3b9953 then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(_0x3b9953)
+end
+else
+local _0x0ac160=game.Players.LocalPlayer.Character
+local _0x1f5a26=_0x0ac160:FindFirstChild(string._0x0b19c5(72,97,110,100,115,116,97,110,100,115))
+if _0x1f5a26 then
+_0x1f5a26.Parent=game.Players.LocalPlayer.Backpack
+end
+end
+task.spawn(function()
+while _G.AutoHandstands do
+if not _G.AutoHandstands then break end
+game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer._0xf9684c:FireServer(string._0x0b19c5(114,101,112))
+task.wait(0.1)
+end
+end)
+end,string._0x0b19c5(65,117,116,111,32,72,97,110,100,115,116,97,110,100,115))
+_0x8ade0b:AddSwitch(string._0x0b19c5(65,117,116,111,32,83,105,116,117,112,115), function(Value)
+_G.AutoSitups=Value
+if Value then
+local _0x8e3658=game.Players.LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(83,105,116,117,112,115))
+if _0x8e3658 then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(_0x8e3658)
+end
+else
+local _0x0ac160=game.Players.LocalPlayer.Character
+local _0x1f5a26=_0x0ac160:FindFirstChild(string._0x0b19c5(83,105,116,117,112,115))
+if _0x1f5a26 then
+_0x1f5a26.Parent=game.Players.LocalPlayer.Backpack
+end
+end
+task.spawn(function()
+while _G.AutoSitups do
+if not _G.AutoSitups then break end
+game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)).LocalPlayer._0xf9684c:FireServer(string._0x0b19c5(114,101,112))
+task.wait(0.1)
+end
+end)
+end,string._0x0b19c5(65,117,116,111,32,65,98,100,111,109,105,110,97,108,115))
+_0x8ade0b:AddSwitch(string._0x0b19c5(65,117,116,111,32,80,117,110,99,104), function(Value)
+_G._0x4d93c7=Value
+if Value then
+task.spawn(function()
+while _G._0x4d93c7 do
+if not _G._0x4d93c7 then break end
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x3f3a3b=_0x65d7cf.Backpack:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b then
+_0x3f3a3b.Parent=_0x65d7cf.Character
+if _0x3f3a3b:FindFirstChild(string._0x0b19c5(97,116,116,97,99,107,84,105,109,101)) then
+_0x3f3a3b._0x2a0f29.Value=0
+end
+end
+task.wait(0.1)
+end
+end)
+task.spawn(function()
+while _G._0x4d93c7 do
+if not _G._0x4d93c7 then break end
+local _0x65d7cf=game.Players.LocalPlayer
+_0x65d7cf._0xf9684c:FireServer(string._0x0b19c5(112,117,110,99,104),string._0x0b19c5(114,105,103,104,116,72,97,110,100))
+_0x65d7cf._0xf9684c:FireServer(string._0x0b19c5(112,117,110,99,104),string._0x0b19c5(108,101,102,116,72,97,110,100))
+local _0x0ac160=_0x65d7cf.Character
+if _0x0ac160 then
+local _0x8ec7af=_0x0ac160:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x8ec7af then
+_0x8ec7af:Activate()
+end
+end
+task.wait(0)
+end
+end)
+else
+local _0x0ac160=game.Players.LocalPlayer.Character
+local _0x1f5a26=_0x0ac160:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x1f5a26 then
+_0x1f5a26.Parent=game.Players.LocalPlayer.Backpack
+end
+end
+end,string._0x0b19c5(65,117,116,111,32,80,117,110,99,104))
+_0x8ade0b:AddSwitch(string._0x0b19c5(70,97,115,116,32,84,111,111,108,115), function(Value)
+_G.FastTools=Value
+local _0x1a75b3={
+{
+string._0x0b19c5(80,117,110,99,104),
+string._0x0b19c5(97,116,116,97,99,107,84,105,109,101),
+Value and 0 or 0.35
+},
+{
+string._0x0b19c5(71,114,111,117,110,100,32,83,108,97,109),
+string._0x0b19c5(97,116,116,97,99,107,84,105,109,101),
+Value and 0 or 6
+},
+{
+string._0x0b19c5(83,116,111,109,112),
+string._0x0b19c5(97,116,116,97,99,107,84,105,109,101),
+Value and 0 or 7
+},
+{
+string._0x0b19c5(72,97,110,100,115,116,97,110,100,115),
+string._0x0b19c5(114,101,112,84,105,109,101),
+Value and 0 or 1
+},
+{
+string._0x0b19c5(80,117,115,104,117,112,115),
+string._0x0b19c5(114,101,112,84,105,109,101),
+Value and 0 or 1
+},
+{
+string._0x0b19c5(87,101,105,103,104,116),
+string._0x0b19c5(114,101,112,84,105,109,101),
+Value and 0 or 1
+},
+{
+string._0x0b19c5(83,105,116,117,112,115),
+string._0x0b19c5(114,101,112,84,105,109,101),
+Value and 0 or 1
+}
+}
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x098fb0=_0x65d7cf:WaitForChild(string._0x0b19c5(66,97,99,107,112,97,99,107))
+for _, _0x75f2b1 in ipairs(_0x1a75b3) do
+local _0xba1d25=_0x098fb0:FindFirstChild(_0x75f2b1[1])
+if _0xba1d25 and _0xba1d25:FindFirstChild(_0x75f2b1[2]) then
+_0xba1d25[_0x75f2b1[2]].Value=_0x75f2b1[3]
+end
+local _0xfe7bdc=_0x65d7cf.Character and _0x65d7cf.Character:FindFirstChild(_0x75f2b1[1])
+if _0xfe7bdc and _0xfe7bdc:FindFirstChild(_0x75f2b1[2]) then
+_0xfe7bdc[_0x75f2b1[2]].Value=_0x75f2b1[3]
+end
+end
+end,string._0x0b19c5(83,112,101,101,100,32,117,112,32,97,108,108,32,116,111,111,108,115))
+local _0x9e559e=os._0x8c5885()
+local _0x33fffd=0
+local _0x569d0c=0
+local _0x687299=0
+local _0xf9d311=0
+local _0xd9089b=0
+local _0x799fe9=false
+local Killer=_0xca4896:AddTab(string._0x0b19c5(75,105,108,108))
+local Players=game:GetService(string._0x0b19c5(80,108,97,121,101,114,115))
+local LocalPlayer=Players.LocalPlayer
+local _0x4fc21b={}
+local _0xc72b6c={}
+local _0xa09bf5=false
+local _0xd1dfc8=false
+local _0xe67973=false
+local _0x93bc30=false
+local _0xf332f2=false
+local _0x9ad92e=false
+local _0xeb8167=false
+local _0x002e47={}
+local _0xf4ee44={}
+Killer:AddSwitch(string._0x0b19c5(65,117,116,111,32,71,111,111,100,32,75,97,114,109,97), function(_0x8fc4d8)
+_0xa09bf5=_0x8fc4d8
+task.spawn(function()
+while _0xa09bf5 do
+local _0x86af76=LocalPlayer.Character
+local _0x7f9564=_0x86af76 and _0x86af76:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100))
+local _0x7cfc19=_0x86af76 and _0x86af76:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100))
+if _0x86af76 and _0x7f9564 and _0x7cfc19 then
+for _, _0x77d391 in ipairs(Players:GetPlayers()) do
+if _0x77d391~=LocalPlayer then
+local _0xfffd9c=_0x77d391:FindFirstChild(string._0x0b19c5(101,118,105,108,75,97,114,109,97))
+local _0x766dce=_0x77d391:FindFirstChild(string._0x0b19c5(103,111,111,100,75,97,114,109,97))
+if _0xfffd9c and _0x766dce and _0xfffd9c:IsA(string._0x0b19c5(73,110,116,86,97,108,117,101)) and _0x766dce:IsA(string._0x0b19c5(73,110,116,86,97,108,117,101)) and _0xfffd9c.Value>_0x766dce.Value then
+local _0x3b4d56=_0x77d391.Character and _0x77d391.Character:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+if _0x3b4d56 then
+firetouchinterest(_0x7f9564, _0x3b4d56, 1)
+firetouchinterest(_0x7cfc19, _0x3b4d56, 1)
+firetouchinterest(_0x7f9564, _0x3b4d56, 0)
+firetouchinterest(_0x7cfc19, _0x3b4d56, 0)
+end
+end
+end
+end
+end
+task.wait(0.01)
+end
+end)
+end)
+Killer:AddSwitch(string._0x0b19c5(65,117,116,111,32,66,97,100,32,75,97,114,109,97), function(_0x8fc4d8)
+_0xd1dfc8=_0x8fc4d8
+task.spawn(function()
+while _0xd1dfc8 do
+local _0x86af76=LocalPlayer.Character
+local _0x7f9564=_0x86af76 and _0x86af76:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100))
+local _0x7cfc19=_0x86af76 and _0x86af76:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100))
+if _0x86af76 and _0x7f9564 and _0x7cfc19 then
+for _, _0x77d391 in ipairs(Players:GetPlayers()) do
+if _0x77d391~=LocalPlayer then
+local _0xfffd9c=_0x77d391:FindFirstChild(string._0x0b19c5(101,118,105,108,75,97,114,109,97))
+local _0x766dce=_0x77d391:FindFirstChild(string._0x0b19c5(103,111,111,100,75,97,114,109,97))
+if _0xfffd9c and _0x766dce and _0xfffd9c:IsA(string._0x0b19c5(73,110,116,86,97,108,117,101)) and _0x766dce:IsA(string._0x0b19c5(73,110,116,86,97,108,117,101)) and _0x766dce.Value>_0xfffd9c.Value then
+local _0x3b4d56=_0x77d391.Character and _0x77d391.Character:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+if _0x3b4d56 then
+firetouchinterest(_0x7f9564, _0x3b4d56, 1)
+firetouchinterest(_0x7cfc19, _0x3b4d56, 1)
+firetouchinterest(_0x7f9564, _0x3b4d56, 0)
+firetouchinterest(_0x7cfc19, _0x3b4d56, 0)
+end
+end
+end
+end
+end
+task.wait(0.01)
+end
+end)
+end)
+local Players=game:GetService(string._0x0b19c5(80,108,97,121,101,114,115))
+local LocalPlayer=Players.LocalPlayer
+local _0x402d5b=false
+Killer:AddSwitch(string._0x0b19c5(65,117,116,111,32,87,104,105,116,101,108,105,115,116,32,70,114,105,101,110,100,115), function(_0x3f774b)
+_0x402d5b=_0x3f774b
+if _0x3f774b then
+for _, _0x65d7cf in ipairs(Players:GetPlayers()) do
+if _0x65d7cf~=LocalPlayer and LocalPlayer:IsFriendsWith(_0x65d7cf.UserId) then
+_0x4fc21b[_0x65d7cf.Name]=true
+end
+end
+Players.PlayerAdded:Connect(function(_0x65d7cf)
+if _0x402d5b and _0x65d7cf~=LocalPlayer and LocalPlayer:IsFriendsWith(_0x65d7cf.UserId) then
+_0x4fc21b[_0x65d7cf.Name]=true
+end
+end)
+else
+for _0x432992 in pairs(_0x4fc21b) do
+local _0xd42abb=Players:FindFirstChild(_0x432992)
+if _0xd42abb and LocalPlayer:IsFriendsWith(_0xd42abb.UserId) then
+_0x4fc21b[_0x432992]=nil
+end
+end
+end
+end)
+Killer:AddTextBox(string._0x0b19c5(87,104,105,116,101,108,105,115,116), function(_0xaf54ee)
+local _0x77d391=Players:FindFirstChild(_0xaf54ee)
+if _0x77d391 then
+_0x4fc21b[_0x77d391.Name]=true
+end
+end)
+Killer:AddTextBox(string._0x0b19c5(85,110,87,104,105,116,101,108,105,115,116), function(_0xaf54ee)
+local _0x77d391=Players:FindFirstChild(_0xaf54ee)
+if _0x77d391 then
+_0x4fc21b[_0x77d391.Name]=nil
+end
+end)
+Killer:AddSwitch(string._0x0b19c5(65,117,116,111,32,75,105,108,108), function(_0x8fc4d8)
+_0xe67973=_0x8fc4d8
+task.spawn(function()
+while _0xe67973 do
+local _0x0ac160=LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local _0x7f9564=_0x0ac160:FindFirstChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100))
+local _0x7cfc19=_0x0ac160:FindFirstChild(string._0x0b19c5(76,101,102,116,72,97,110,100))
+local _0x3f3a3b=LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b and not _0x0ac160:FindFirstChild(string._0x0b19c5(80,117,110,99,104)) then
+_0x3f3a3b.Parent=_0x0ac160
+end
+if _0x7f9564 and _0x7cfc19 then
+for _, _0x77d391 in ipairs(Players:GetPlayers()) do
+if _0x77d391~=LocalPlayer and not _0x4fc21b[_0x77d391.Name] then
+local _0x7df97b=_0x77d391.Character
+local _0x3b4d56=_0x7df97b and _0x7df97b:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+if _0x3b4d56 then
+pcall(function()
+firetouchinterest(_0x7f9564, _0x3b4d56, 1)
+firetouchinterest(_0x7cfc19, _0x3b4d56, 1)
+firetouchinterest(_0x7f9564, _0x3b4d56, 0)
+firetouchinterest(_0x7cfc19, _0x3b4d56, 0)
+end)
+end
+end
+end
+end
+task.wait(0.05)
+end
+end)
+end)
+local _0x62ef77=Killer:AddDropdown(string._0x0b19c5(83,101,108,101,99,116,32,84,97,114,103,101,116), function(_0x432992)
+if _0x432992 and not table._0xcbdc98(_0xc72b6c, _0x432992) then
+table._0xc55c35(_0xc72b6c, _0x432992)
+end
+end)
+Killer:AddTextBox(string._0x0b19c5(82,101,109,111,118,101,32,84,97,114,103,101,116), function(_0x432992)
+for i, v in ipairs(_0xc72b6c) do
+if v==_0x432992 then
+table._0x3cc1e3(_0xc72b6c, i)
+break
+end
+end
+end)
+for _, _0x65d7cf in ipairs(Players:GetPlayers()) do
+if _0x65d7cf~=LocalPlayer then
+_0x62ef77:Add(_0x65d7cf.Name)
+_0x002e47[_0x65d7cf.Name]=true
+end
+end
+Players.PlayerAdded:Connect(function(_0x65d7cf)
+if _0x65d7cf~=LocalPlayer then
+_0x62ef77:Add(_0x65d7cf.Name)
+_0x002e47[_0x65d7cf.Name]=true
+end
+end)
+Players.PlayerRemoving:Connect(function(_0x65d7cf)
+if _0x002e47[_0x65d7cf.Name] then
+_0x002e47[_0x65d7cf.Name]=nil
+_0x62ef77:Clear()
+for _0x432992 in pairs(_0x002e47) do
+_0x62ef77:Add(_0x432992)
+end
+end
+for i=#_0xc72b6c, 1,-1 do
+if _0xc72b6c[i]==_0x65d7cf.Name then
+table._0x3cc1e3(_0xc72b6c, i)
+end
+end
+end)
+Killer:AddSwitch(string._0x0b19c5(83,116,97,114,116,32,75,105,108,108,32,84,97,114,103,101,116), function(_0x3f774b)
+_0x93bc30=_0x3f774b
+task.spawn(function()
+while _0x93bc30 do
+local _0x0ac160=LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local _0x3f3a3b=LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b and not _0x0ac160:FindFirstChild(string._0x0b19c5(80,117,110,99,104)) then
+_0x3f3a3b.Parent=_0x0ac160
+end
+local _0x7f9564=_0x0ac160:WaitForChild(string._0x0b19c5(82,105,103,104,116,72,97,110,100), 5)
+local _0x7cfc19=_0x0ac160:WaitForChild(string._0x0b19c5(76,101,102,116,72,97,110,100), 5)
+if _0x7f9564 and _0x7cfc19 then
+for _, _0x432992 in ipairs(_0xc72b6c) do
+local _0x77d391=Players:FindFirstChild(_0x432992)
+if _0x77d391 and _0x77d391~=LocalPlayer then
+local _0x3b4d56=_0x77d391.Character and _0x77d391.Character:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+if _0x3b4d56 then
+pcall(function()
+firetouchinterest(_0x7f9564, _0x3b4d56, 1)
+firetouchinterest(_0x7cfc19, _0x3b4d56, 1)
+firetouchinterest(_0x7f9564, _0x3b4d56, 0)
+firetouchinterest(_0x7cfc19, _0x3b4d56, 0)
+end)
+end
+end
+end
+end
+task.wait(0.05)
+end
+end)
+end)
+local _0x588a25=Killer:AddDropdown(string._0x0b19c5(83,101,108,101,99,116,32,86,105,101,119,32,84,97,114,103,101,116), function(_0x432992)
+_0x825869=_0x432992
+end)
+for _, _0x65d7cf in ipairs(Players:GetPlayers()) do
+if _0x65d7cf~=LocalPlayer then
+_0x588a25:Add(_0x65d7cf.Name)
+end
+end
+Players.PlayerAdded:Connect(function(_0x65d7cf)
+if _0x65d7cf~=LocalPlayer then
+_0x588a25:Add(_0x65d7cf.Name)
+end
+end)
+Players.PlayerRemoving:Connect(function(_0x65d7cf)
+if _0x65d7cf~=LocalPlayer then
+_0x588a25:Clear()
+for _, _0x92836e in ipairs(Players:GetPlayers()) do
+if _0x92836e~=LocalPlayer then
+_0x588a25:Add(_0x92836e.Name)
+end
+end
+end
+end)
+Killer:AddSwitch(string._0x0b19c5(86,105,101,119,32,80,108,97,121,101,114), function(_0x8fc4d8)
+_0xf332f2=_0x8fc4d8
+if not _0xf332f2 then
+local _0x56bc16=workspace.CurrentCamera
+_0x56bc16.CameraSubject=LocalPlayer.Character and LocalPlayer.Character:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100)) or LocalPlayer
+return
+end
+task.spawn(function()
+while _0xf332f2 do
+local _0x77d391=Players:FindFirstChild(_0x825869)
+if _0x77d391 and _0x77d391~=LocalPlayer then
+local _0x980c8d=_0x77d391.Character and _0x77d391.Character:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100))
+if _0x980c8d then
+workspace.CurrentCamera.CameraSubject=_0x980c8d
+end
+end
+task.wait(0.1)
+end
+end)
+end)
+local _0xdd16ae=Killer:AddButton(string._0x0b19c5(82,101,109,111,118,101,32,80,117,110,99,104,32,65,110,105,109), function()
+local _0x460411={
+[string._0x0b19c5(114,98,120,97,115,115,101,116,105,100,58,47,47,51,54,51,56,55,50,57,48,53,51)]=true,
+[string._0x0b19c5(114,98,120,97,115,115,101,116,105,100,58,47,47,51,54,51,56,55,54,55,52,50,55)]=true,
+}
+local function _0x8e310a()
+local _0x0b19c5=game.Players.LocalPlayer.Character
+if not _0x0b19c5 or not _0x0b19c5:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100)) then return end
+local _0x980c8d=_0x0b19c5:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100))
+for _, _0x9d212f in pairs(_0x980c8d:GetPlayingAnimationTracks()) do
+if _0x9d212f.Animation then
+local _0x7c70dd=_0x9d212f.Animation.AnimationId
+local _0x89d7df=_0x9d212f.Name:_0xd1aeb7()
+if _0x460411[_0x7c70dd] or
+_0x89d7df:_0x1841df(string._0x0b19c5(112,117,110,99,104)) or
+_0x89d7df:_0x1841df(string._0x0b19c5(97,116,116,97,99,107)) or
+_0x89d7df:_0x1841df(string._0x0b19c5(114,105,103,104,116)) then
+_0x9d212f:Stop()
+end
+end
+end
+if not _G.AnimBlockConnection then
+local _0xfa7dcf=_0x980c8d.AnimationPlayed:Connect(function(_0x9d212f)
+if _0x9d212f.Animation then
+local _0x7c70dd=_0x9d212f.Animation.AnimationId
+local _0x89d7df=_0x9d212f.Name:_0xd1aeb7()
+if _0x460411[_0x7c70dd] or
+_0x89d7df:_0x1841df(string._0x0b19c5(112,117,110,99,104)) or
+_0x89d7df:_0x1841df(string._0x0b19c5(97,116,116,97,99,107)) or
+_0x89d7df:_0x1841df(string._0x0b19c5(114,105,103,104,116)) then
+_0x9d212f:Stop()
+end
+end
+end)
+_G.AnimBlockConnection=_0xfa7dcf
+end
+end
+_0x8e310a()
+local function _0x02f448()
+local function _0x8dcedd(_0xba1d25)
+if _0xba1d25 and (_0xba1d25.Name==string._0x0b19c5(80,117,110,99,104)or _0xba1d25.Name:_0x1841df(string._0x0b19c5(65,116,116,97,99,107)) or _0xba1d25.Name:_0x1841df(string._0x0b19c5(82,105,103,104,116))) then
+if not _0xba1d25:GetAttribute(string._0x0b19c5(65,99,116,105,118,97,116,101,100,79,118,101,114,114,105,100,101)) then
+_0xba1d25:SetAttribute(string._0x0b19c5(65,99,116,105,118,97,116,101,100,79,118,101,114,114,105,100,101), true)
+local _0xfa7dcf=_0xba1d25.Activated:Connect(function()
+task.wait(0.05)
+local _0x0b19c5=game.Players.LocalPlayer.Character
+if _0x0b19c5 and _0x0b19c5:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100)) then
+for _, _0x9d212f in pairs(_0x0b19c5.Humanoid:GetPlayingAnimationTracks()) do
+if _0x9d212f.Animation then
+local _0x7c70dd=_0x9d212f.Animation.AnimationId
+local _0x89d7df=_0x9d212f.Name:_0xd1aeb7()
+if _0x460411[_0x7c70dd] or
+_0x89d7df:_0x1841df(string._0x0b19c5(112,117,110,99,104)) or
+_0x89d7df:_0x1841df(string._0x0b19c5(97,116,116,97,99,107)) or
+_0x89d7df:_0x1841df(string._0x0b19c5(114,105,103,104,116)) then
+_0x9d212f:Stop()
+end
+end
+end
+end
+end)
+if not _G.ToolConnections then
+_G.ToolConnections={}
+end
+_G.ToolConnections[_0xba1d25]=_0xfa7dcf
+end
+end
+end
+for _, _0xba1d25 in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+_0x8dcedd(_0xba1d25)
+end
+local _0x0b19c5=game.Players.LocalPlayer.Character
+if _0x0b19c5 then
+for _, _0xba1d25 in pairs(_0x0b19c5:GetChildren()) do
+if _0xba1d25:IsA(string._0x0b19c5(84,111,111,108)) then
+_0x8dcedd(_0xba1d25)
+end
+end
+end
+if not _G.BackpackAddedConnection then
+_G.BackpackAddedConnection=game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function(_0x0ecf3e)
+if _0x0ecf3e:IsA(string._0x0b19c5(84,111,111,108)) then
+task.wait(0.1)
+_0x8dcedd(_0x0ecf3e)
+end
+end)
+end
+if not _G.CharacterToolAddedConnection and _0x0b19c5 then
+_G.CharacterToolAddedConnection=_0x0b19c5.ChildAdded:Connect(function(_0x0ecf3e)
+if _0x0ecf3e:IsA(string._0x0b19c5(84,111,111,108)) then
+task.wait(0.1)
+_0x8dcedd(_0x0ecf3e)
+end
+end)
+end
+end
+_0x02f448()
+if not _G.AnimMonitorConnection then
+_G.AnimMonitorConnection=game:GetService(string._0x0b19c5(82,117,110,83,101,114,118,105,99,101)).Heartbeat:Connect(function()
+if tick()%0.5<0.01 then
+local _0x0b19c5=game.Players.LocalPlayer.Character
+if _0x0b19c5 and _0x0b19c5:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100)) then
+for _, _0x9d212f in pairs(_0x0b19c5.Humanoid:GetPlayingAnimationTracks()) do
+if _0x9d212f.Animation then
+local _0x7c70dd=_0x9d212f.Animation.AnimationId
+local _0x89d7df=_0x9d212f.Name:_0xd1aeb7()
+if _0x460411[_0x7c70dd] or
+_0x89d7df:_0x1841df(string._0x0b19c5(112,117,110,99,104)) or
+_0x89d7df:_0x1841df(string._0x0b19c5(97,116,116,97,99,107)) or
+_0x89d7df:_0x1841df(string._0x0b19c5(114,105,103,104,116)) then
+_0x9d212f:Stop()
+end
+end
+end
+end
+end
+end)
+end
+if not _G.CharacterAddedConnection then
+_G.CharacterAddedConnection=game.Players.LocalPlayer.CharacterAdded:Connect(function(_0xa9eb93)
+task.wait(1)
+_0x8e310a()
+_0x02f448()
+if _G.CharacterToolAddedConnection then
+_G.CharacterToolAddedConnection:Disconnect()
+end
+_G.CharacterToolAddedConnection=_0xa9eb93.ChildAdded:Connect(function(_0x0ecf3e)
+if _0x0ecf3e:IsA(string._0x0b19c5(84,111,111,108)) then
+task.wait(0.1)
+_0x8dcedd(_0x0ecf3e)
+end
+end)
+end)
+end
+end)
+function RecoveryPunch()
+if _G.AnimBlockConnection then
+_G.AnimBlockConnection:Disconnect()
+_G.AnimBlockConnection=nil
+end
+if _G.AnimMonitorConnection then
+_G.AnimMonitorConnection:Disconnect()
+_G.AnimMonitorConnection=nil
+end
+if _G.ToolConnections then
+for _, _0xb16bf9 in pairs(_G.ToolConnections) do
+if _0xb16bf9 then _0xb16bf9:Disconnect() end
+end
+_G.ToolConnections=nil
+end
+if _G.BackpackAddedConnection then
+_G.BackpackAddedConnection:Disconnect()
+_G.BackpackAddedConnection=nil
+end
+if _G.CharacterToolAddedConnection then
+_G.CharacterToolAddedConnection:Disconnect()
+_G.CharacterToolAddedConnection=nil
+end
+if _G.CharacterAddedConnection then
+_G.CharacterAddedConnection:Disconnect()
+_G.CharacterAddedConnection=nil
+end
+end
+Killer:AddButton(string._0x0b19c5(82,101,99,111,118,101,114,32,80,117,110,99,104,32,65,110,105,109), function()
+RecoveryPunch()
+end)
+Killer:AddSwitch(string._0x0b19c5(65,117,116,111,32,69,113,117,105,112,32,80,117,110,99,104), function(_0x3f774b)
+_0x9ad92e=_0x3f774b
+task.spawn(function()
+while _0x9ad92e do
+local _0x3f3a3b=LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b then
+_0x3f3a3b.Parent=LocalPlayer.Character
+end
+task.wait(0.1)
+end
+end)
+end)
+Killer:AddSwitch(string._0x0b19c5(65,117,116,111,32,80,117,110,99,104,32,91,78,111,32,65,110,105,109,97,116,105,111,110,93), function(_0x3f774b)
+_0xeb8167=_0x3f774b
+task.spawn(function()
+while _0xeb8167 do
+local _0x3f3a3b=LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(80,117,110,99,104)) or LocalPlayer.Character and LocalPlayer.Character:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b then
+if _0x3f3a3b.Parent~=LocalPlayer.Character then
+_0x3f3a3b.Parent=LocalPlayer.Character
+end
+LocalPlayer._0xf9684c:FireServer(string._0x0b19c5(112,117,110,99,104),string._0x0b19c5(114,105,103,104,116,72,97,110,100))
+LocalPlayer._0xf9684c:FireServer(string._0x0b19c5(112,117,110,99,104),string._0x0b19c5(108,101,102,116,72,97,110,100))
+else
+_0xeb8167=false
+end
+task.wait(0.01)
+end
+end)
+end)
+Killer:AddSwitch(string._0x0b19c5(65,117,116,111,32,80,117,110,99,104), function(_0x3f774b)
+_G._0x4d93c7=_0x3f774b
+if _0x3f774b then
+task.spawn(function()
+while _G._0x4d93c7 do
+local _0x3f3a3b=LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b then
+_0x3f3a3b.Parent=LocalPlayer.Character
+if _0x3f3a3b:FindFirstChild(string._0x0b19c5(97,116,116,97,99,107,84,105,109,101)) then
+_0x3f3a3b._0x2a0f29.Value=0
+end
+end
+task.wait(0.1)
+end
+end)
+task.spawn(function()
+while _G._0x4d93c7 do
+local _0x3f3a3b=LocalPlayer.Character and LocalPlayer.Character:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b then
+_0x3f3a3b:Activate()
+end
+task.wait(0.1)
+end
+end)
+else
+local _0x3f3a3b=LocalPlayer.Character and LocalPlayer.Character:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b then
+_0x3f3a3b.Parent=LocalPlayer.Backpack
+end
+end
+end)
+Killer:AddSwitch(string._0x0b19c5(70,97,115,116,32,80,117,110,99,104), function(_0x3f774b)
+_G._0x404c09=_0x3f774b
+if _0x3f774b then
+task.spawn(function()
+while _G._0x404c09 do
+local _0x3f3a3b=LocalPlayer.Backpack:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b then
+_0x3f3a3b.Parent=LocalPlayer.Character
+if _0x3f3a3b:FindFirstChild(string._0x0b19c5(97,116,116,97,99,107,84,105,109,101)) then
+_0x3f3a3b._0x2a0f29.Value=0
+end
+end
+task.wait()
+end
+end)
+task.spawn(function()
+while _G._0x404c09 do
+local _0x3f3a3b=LocalPlayer.Character and LocalPlayer.Character:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b then
+_0x3f3a3b:Activate()
+end
+task.wait()
+end
+end)
+else
+local _0x3f3a3b=LocalPlayer.Character and LocalPlayer.Character:FindFirstChild(string._0x0b19c5(80,117,110,99,104))
+if _0x3f3a3b then
+_0x3f3a3b.Parent=LocalPlayer.Backpack
+end
+end
+end)
+local Players=game:GetService(string._0x0b19c5(80,108,97,121,101,114,115))
+local LocalPlayer=Players.LocalPlayer
+local _0xdc177c=false
+local _0xc6fdce=nil
+local _0x4c9329=Killer:AddButton(string._0x0b19c5(75,105,108,108,32,67,111,117,110,116,101,114,32,85,73), function()
+_0xdc177c=not _0xdc177c
+if _0xdc177c then
+if not _0xc6fdce then
+_0xc6fdce=Instance._0x22c44f(string._0x0b19c5(83,99,114,101,101,110,71,117,105))
+_0xc6fdce.Name=string._0x0b19c5(75,105,108,108,115,71,117,105)
+_0xc6fdce.ResetOnSpawn=false
+_0xc6fdce.Parent=LocalPlayer:WaitForChild(string._0x0b19c5(80,108,97,121,101,114,71,117,105))
+local _0xdeedfb=Instance._0x22c44f(string._0x0b19c5(70,114,97,109,101))
+_0xdeedfb.Size=UDim2._0x22c44f(0, 180, 0, 55)
+_0xdeedfb.Position=UDim2._0x22c44f(0.5,-90, 0, 60)
+_0xdeedfb.BackgroundColor3=Color3._0x6db02a(0, 0, 139)
+_0xdeedfb.BorderColor3=Color3._0x6db02a(0, 0, 0)
+_0xdeedfb.Active=true
+_0xdeedfb.Draggable=true
+_0xdeedfb.Parent=_0xc6fdce
+local _0xe122a0=Instance._0x22c44f(string._0x0b19c5(84,101,120,116,76,97,98,101,108))
+_0xe122a0.Size=UDim2._0x22c44f(1, 0, 0, 20)
+_0xe122a0.Position=UDim2._0x22c44f(0, 0, 0, 0)
+_0xe122a0.BackgroundTransparency=1
+_0xe122a0.Text=string._0x0b19c5(80,114,111,106,101,99,116,32,86,49)
+_0xe122a0.TextColor3=Color3._0x6db02a(255, 255, 255)
+_0xe122a0.Font=Enum.Font.SourceSansBold
+_0xe122a0.TextScaled=true
+_0xe122a0.Parent=_0xdeedfb
+local _0x04f4d1=Instance._0x22c44f(string._0x0b19c5(84,101,120,116,76,97,98,101,108))
+_0x04f4d1.Size=UDim2._0x22c44f(1, 0, 0, 35)
+_0x04f4d1.Position=UDim2._0x22c44f(0, 0, 0, 20)
+_0x04f4d1.BackgroundTransparency=1
+_0x04f4d1.TextColor3=Color3._0x6db02a(255, 255, 255)
+_0x04f4d1.TextScaled=true
+_0x04f4d1.Font=Enum.Font.SourceSansBold
+_0x04f4d1.Parent=_0xdeedfb
+coroutine._0x0ab576(function()
+while _0xc6fdce and _0xc6fdce.Parent do
+local _0x2f9378=LocalPlayer:FindFirstChild(string._0x0b19c5(108,101,97,100,101,114,115,116,97,116,115)) and LocalPlayer._0xa69b7c:FindFirstChild(string._0x0b19c5(75,105,108,108,115))
+if _0x2f9378 then
+_0x04f4d1.Text=string._0x0b19c5(75,105,108,108,115,58,32).. tostring(_0x2f9378.Value)
+else
+_0x04f4d1.Text=string._0x0b19c5(75,105,108,108,115,58,32,48)
+end
+task.wait(0.2)
+end
+end)()
+else
+_0xc6fdce.Enabled=true
+end
+else
+if _0xc6fdce then
+_0xc6fdce.Enabled=false
+end
+end
+end)
+_0x4c9329.TextColor3=Color3._0x6db02a(255, 255, 255)
+local _0x831108=_0xca4896:AddTab(string._0x0b19c5(80,101,116,115))
+local ReplicatedStorage=game:GetService(string._0x0b19c5(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101))
+local _0x0b9173=string._0x0b19c5(78,101,111,110,32,71,117,97,114,100,105,97,110)
+local _0xfd94cc=_0x831108:AddDropdown(string._0x0b19c5(83,101,108,101,99,116,32,80,101,116), function(_0xaf54ee)
+_0x0b9173=_0xaf54ee
+end)
+_0xfd94cc:Add(string._0x0b19c5(78,101,111,110,32,71,117,97,114,100,105,97,110))
+_0xfd94cc:Add(string._0x0b19c5(66,108,117,101,32,66,105,114,100,105,101))
+_0xfd94cc:Add(string._0x0b19c5(66,108,117,101,32,66,117,110,110,121))
+_0xfd94cc:Add(string._0x0b19c5(66,108,117,101,32,70,105,114,101,99,97,115,116,101,114))
+_0xfd94cc:Add(string._0x0b19c5(66,108,117,101,32,80,104,101,111,110,105,120))
+_0xfd94cc:Add(string._0x0b19c5(67,114,105,109,115,111,110,32,70,97,108,99,111,110))
+_0xfd94cc:Add(string._0x0b19c5(67,121,98,101,114,110,101,116,105,99,32,83,104,111,119,100,111,119,110,32,68,114,97,103,111,110))
+_0xfd94cc:Add(string._0x0b19c5(68,97,114,107,32,71,111,108,101,109))
+_0xfd94cc:Add(string._0x0b19c5(68,97,114,107,32,76,101,103,101,110,100,115,32,77,97,110,116,105,99,111,114,101))
+_0xfd94cc:Add(string._0x0b19c5(68,97,114,107,32,86,97,109,112,121))
+_0xfd94cc:Add(string._0x0b19c5(68,97,114,107,115,116,97,114,32,72,117,110,116,101,114))
+_0xfd94cc:Add(string._0x0b19c5(69,116,101,114,110,97,108,32,83,116,114,105,107,101,32,76,101,118,105,97,116,104,97,110))
+_0xfd94cc:Add(string._0x0b19c5(70,114,111,115,116,119,97,118,101,32,76,101,103,101,110,100,115,32,80,101,110,103,117,105,110))
+_0xfd94cc:Add(string._0x0b19c5(71,111,108,100,32,87,97,114,114,105,111,114))
+_0xfd94cc:Add(string._0x0b19c5(71,111,108,100,101,110,32,80,104,101,111,110,105,120))
+_0xfd94cc:Add(string._0x0b19c5(71,111,108,100,101,110,32,86,105,107,105,110,103))
+_0xfd94cc:Add(string._0x0b19c5(71,114,101,101,110,32,66,117,116,116,101,114,102,108,121))
+_0xfd94cc:Add(string._0x0b19c5(71,114,101,101,110,32,70,105,114,101,99,97,115,116,101,114))
+_0xfd94cc:Add(string._0x0b19c5(73,110,102,101,114,110,97,108,32,68,114,97,103,111,110))
+_0xfd94cc:Add(string._0x0b19c5(76,105,103,104,116,110,105,110,103,32,83,116,114,105,107,101,32,80,104,97,110,116,111,109))
+_0xfd94cc:Add(string._0x0b19c5(77,97,103,105,99,32,66,117,116,116,101,114,102,108,121))
+_0xfd94cc:Add(string._0x0b19c5(77,117,115,99,108,101,32,83,101,110,115,101,105))
+_0xfd94cc:Add(string._0x0b19c5(79,114,97,110,103,101,32,72,101,100,103,101,104,111,103))
+_0xfd94cc:Add(string._0x0b19c5(79,114,97,110,103,101,32,80,101,103,97,115,117,115))
+_0xfd94cc:Add(string._0x0b19c5(80,104,97,110,116,111,109,32,71,101,110,101,115,105,115,32,68,114,97,103,111,110))
+_0xfd94cc:Add(string._0x0b19c5(80,117,114,112,108,101,32,68,114,97,103,111,110))
+_0xfd94cc:Add(string._0x0b19c5(80,117,114,112,108,101,32,70,97,108,99,111,110))
+_0xfd94cc:Add(string._0x0b19c5(82,101,100,32,68,114,97,103,111,110))
+_0xfd94cc:Add(string._0x0b19c5(82,101,100,32,70,105,114,101,99,97,115,116,101,114))
+_0xfd94cc:Add(string._0x0b19c5(82,101,100,32,75,105,116,116,121))
+_0xfd94cc:Add(string._0x0b19c5(83,105,108,118,101,114,32,68,111,103))
+_0xfd94cc:Add(string._0x0b19c5(85,108,116,105,109,97,116,101,32,83,117,112,101,114,110,111,118,97,32,80,101,103,97,115,117,115))
+_0xfd94cc:Add(string._0x0b19c5(85,108,116,114,97,32,66,105,114,100,105,101))
+_0xfd94cc:Add(string._0x0b19c5(87,104,105,116,101,32,80,101,103,97,115,117,115))
+_0xfd94cc:Add(string._0x0b19c5(87,104,105,116,101,32,80,104,101,111,110,105,120))
+_0xfd94cc:Add(string._0x0b19c5(89,101,108,108,111,119,32,66,117,116,116,101,114,102,108,121))
+_0x831108:AddSwitch(string._0x0b19c5(65,117,116,111,32,79,112,101,110,32,80,101,116), function(_0x8fc4d8)
+_G.AutoHatchPet=_0x8fc4d8
+if _0x8fc4d8 then
+spawn(function()
+while _G.AutoHatchPet and _0x0b9173~=''do
+local _0x80b51b=ReplicatedStorage._0x51449a:FindFirstChild(_0x0b9173)
+if _0x80b51b then
+ReplicatedStorage._0xa46575:InvokeServer(_0x80b51b)
+end
+task.wait(0.1)
+end
+end)
+end
+end)
+local _0x09f883=string._0x0b19c5(66,108,117,101,32,65,117,114,97)
+local _0x830db8=_0x831108:AddDropdown(string._0x0b19c5(83,101,108,101,99,116,32,65,117,114,97), function(_0xaf54ee)
+_0x09f883=_0xaf54ee
+end)
+_0x830db8:Add(string._0x0b19c5(65,115,116,114,97,108,32,69,108,101,99,116,114,111))
+_0x830db8:Add(string._0x0b19c5(65,122,117,114,101,32,84,117,110,100,114,97))
+_0x830db8:Add(string._0x0b19c5(66,108,117,101,32,65,117,114,97))
+_0x830db8:Add(string._0x0b19c5(68,97,114,107,32,69,108,101,99,116,114,111))
+_0x830db8:Add(string._0x0b19c5(68,97,114,107,32,76,105,103,104,116,110,105,110,103))
+_0x830db8:Add(string._0x0b19c5(68,97,114,107,32,83,116,111,114,109))
+_0x830db8:Add(string._0x0b19c5(69,108,101,99,116,114,111))
+_0x830db8:Add(string._0x0b19c5(69,110,99,104,97,110,116,101,100,32,77,105,114,97,103,101))
+_0x830db8:Add(string._0x0b19c5(69,110,116,114,111,112,105,99,32,66,108,97,115,116))
+_0x830db8:Add(string._0x0b19c5(69,116,101,114,110,97,108,32,77,101,103,97,115,116,114,105,107,101))
+_0x830db8:Add(string._0x0b19c5(71,114,97,110,100,32,83,117,112,101,114,110,111,118,97))
+_0x830db8:Add(string._0x0b19c5(71,114,101,101,110,32,65,117,114,97))
+_0x830db8:Add(string._0x0b19c5(73,110,102,101,114,110,111))
+_0x830db8:Add(string._0x0b19c5(76,105,103,104,116,110,105,110,103))
+_0x830db8:Add(string._0x0b19c5(77,117,115,99,108,101,32,75,105,110,103))
+_0x830db8:Add(string._0x0b19c5(80,111,119,101,114,32,76,105,103,104,116,110,105,110,103))
+_0x830db8:Add(string._0x0b19c5(80,117,114,112,108,101,32,65,117,114,97))
+_0x830db8:Add(string._0x0b19c5(80,117,114,112,108,101,32,78,111,118,97))
+_0x830db8:Add(string._0x0b19c5(82,101,100,32,65,117,114,97))
+_0x830db8:Add(string._0x0b19c5(83,117,112,101,114,110,111,118,97))
+_0x830db8:Add(string._0x0b19c5(85,108,116,114,97,32,73,110,102,101,114,110,111))
+_0x830db8:Add(string._0x0b19c5(85,108,116,114,97,32,77,105,114,97,103,101))
+_0x830db8:Add(string._0x0b19c5(85,110,115,116,97,98,108,101,32,77,105,114,97,103,101))
+_0x830db8:Add(string._0x0b19c5(89,101,108,108,111,119,32,65,117,114,97))
+_0x831108:AddSwitch(string._0x0b19c5(65,117,116,111,32,79,112,101,110,32,65,117,114,97), function(_0x8fc4d8)
+_G.AutoHatchAura=_0x8fc4d8
+if _0x8fc4d8 then
+spawn(function()
+while _G.AutoHatchAura and _0x09f883~=''do
+local _0x16acba=ReplicatedStorage._0x51449a:FindFirstChild(_0x09f883)
+if _0x16acba then
+ReplicatedStorage._0xa46575:InvokeServer(_0x16acba)
+end
+task.wait(0.1)
+end
+end)
+end
+end)
+local LookDura=_0xca4896:AddTab(string._0x0b19c5(76,111,111,107,68,117,114,97))
+local SelectPlayerName=''
+local PlayerDrop=LookDura:AddDropdown(string._0x0b19c5(83,101,108,101,99,116,32,80,108,97,121,101,114), function(Value)
+SelectPlayerName=Value:_0x1841df(string._0x0b19c5(124,32,40,46,43,41))
+_0x09bf20={}
+end)
+local Playerslist={}
+for _, Plr in pairs(game:GetService(string._0x0b19c5(80,108,97,121,101,114,115)):GetPlayers()) do
+local _0x562aad=Plr.DisplayName ..string._0x0b19c5(32,124,32).. Plr.Name
+table._0xc55c35(Playerslist, _0x562aad)
+end
+for _, AddPlr in ipairs(Playerslist) do
+PlayerDrop:Add(AddPlr)
+end
+local function FormatNumberWithCommas(_0xb7eae7)
+local _0xacb78f=tostring(_0xb7eae7):_0x7cbd4a():_0x38c0fd(string._0x0b19c5(40,37,100,37,100,37,100,41),string._0x0b19c5(37,49,44)):_0x7cbd4a()
+return _0xacb78f:_0x38c0fd(string._0x0b19c5(94,44),'')
+end
+local function FormatAbbreviated(_0xb7eae7)
+local _0x6f87c4={'',string._0x0b19c5(75),string._0x0b19c5(77),string._0x0b19c5(66),string._0x0b19c5(84),string._0x0b19c5(81,97),string._0x0b19c5(81,105)}
+local _0x320a0c=1
+while _0xb7eae7>=1000 do
+_0xb7eae7=_0xb7eae7/1000
+_0x320a0c=_0x320a0c+1
+end
+return string._0x3af754(string._0x0b19c5(37,46,50,102), _0xb7eae7) .. _0x6f87c4[_0x320a0c]
+end
+local function FormatDisplay(_0xdd22b4)
+local _0x2c218a=FormatNumberWithCommas(_0xdd22b4)
+local _0xfec882=FormatAbbreviated(_0xdd22b4)
+returnstring._0x0b19c5(91,32).. _0x2c218a ..string._0x0b19c5(32,124,32).. _0xfec882 ..string._0x0b19c5(32,93)
+end
+local _0x09bf20={}
+local Update=LookDura:AddLabel('')
+local Update1=LookDura:AddLabel('')
+local Update2=LookDura:AddLabel('')
+local Update3=LookDura:AddLabel('')
+local Update4=LookDura:AddLabel('')
+local Update5=LookDura:AddLabel('')
+local Update6=LookDura:AddLabel('')
+local Update9=LookDura:AddLabel('')
+local Update10=LookDura:AddLabel('')
+local Update11=LookDura:AddLabel('')
+local Update12=LookDura:AddLabel('')
+local Update13=LookDura:AddLabel('')
+task.spawn(function()
+while task.wait(0) do
+if SelectPlayerName~=''then
+local _0x65d7cf=game.Players:FindFirstChild(SelectPlayerName)
+if _0x65d7cf then
+if _0x65d7cf:FindFirstChild(string._0x0b19c5(71,101,109,115)) then
+Update1.Text=string._0x0b19c5(71,101,109,115,58,32).. FormatDisplay(_0x65d7cf.Gems.Value)
+end
+if _0x65d7cf:FindFirstChild(string._0x0b19c5(65,103,105,108,105,116,121)) then
+Update3.Text=string._0x0b19c5(65,103,105,108,105,116,121,58,32).. FormatDisplay(_0x65d7cf.Agility.Value)
+end
+if _0x65d7cf:FindFirstChild(string._0x0b19c5(68,117,114,97,98,105,108,105,116,121)) then
+Update4.Text=string._0x0b19c5(68,117,114,97,98,105,108,105,116,121,58,32).. FormatDisplay(_0x65d7cf.Durability.Value)
+end
+if _0x65d7cf:FindFirstChild(string._0x0b19c5(109,117,115,99,108,101,75,105,110,103,84,105,109,101)) then
+Update6.Text=string._0x0b19c5(77,117,115,99,108,101,32,75,105,110,103,32,84,105,109,101,58,32).. FormatDisplay(_0x65d7cf._0xb4972f.Value)
+end
+if _0x65d7cf:FindFirstChild(string._0x0b19c5(99,117,115,116,111,109,83,105,122,101)) then
+Update10.Text=string._0x0b19c5(67,117,115,116,111,109,32,83,105,122,101,58,32).. FormatDisplay(_0x65d7cf._0x2e7813.Value)
+end
+if _0x65d7cf:FindFirstChild(string._0x0b19c5(99,117,115,116,111,109,83,112,101,101,100)) then
+Update11.Text=string._0x0b19c5(67,117,115,116,111,109,32,83,112,101,101,100,58,32).. FormatDisplay(_0x65d7cf._0xdf442a.Value)
+end
+if _0x65d7cf:FindFirstChild(string._0x0b19c5(101,118,105,108,75,97,114,109,97)) then
+Update12.Text=string._0x0b19c5(69,118,105,108,32,75,97,114,109,97,58,32).. FormatDisplay(_0x65d7cf._0xfffd9c.Value)
+end
+if _0x65d7cf:FindFirstChild(string._0x0b19c5(103,111,111,100,75,97,114,109,97)) then
+Update13.Text=string._0x0b19c5(71,111,111,100,32,75,97,114,109,97,58,32).. FormatDisplay(_0x65d7cf._0x766dce.Value)
+end
+local _0xa69b7c=_0x65d7cf:FindFirstChild(string._0x0b19c5(108,101,97,100,101,114,115,116,97,116,115))
+if _0xa69b7c then
+if _0xa69b7c:FindFirstChild(string._0x0b19c5(83,116,114,101,110,103,116,104)) then
+Update.Text=string._0x0b19c5(83,116,114,101,110,103,116,104,58,32).. FormatDisplay(_0xa69b7c.Strength.Value)
+end
+if _0xa69b7c:FindFirstChild(string._0x0b19c5(82,101,98,105,114,116,104,115)) then
+Update2.Text=string._0x0b19c5(82,101,98,105,114,116,104,58,32).. FormatDisplay(_0xa69b7c.Rebirths.Value)
+end
+if _0xa69b7c:FindFirstChild(string._0x0b19c5(75,105,108,108,115)) then
+Update5.Text=string._0x0b19c5(75,105,108,108,115,58,32).. FormatDisplay(_0xa69b7c.Kills.Value)
+end
+end
+if _0x65d7cf:FindFirstChild(string._0x0b19c5(99,117,114,114,101,110,116,77,97,112)) then
+Update9.Text=string._0x0b19c5(67,117,114,114,101,110,116,32,77,97,112,58,32).. tostring(_0x65d7cf._0xb85920.Value)
+else
+Update9.Text=string._0x0b19c5(67,117,114,114,101,110,116,32,77,97,112,58,32,65,117,99,117,110,101,32,100,111,110,110,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162,195,162,194,130,194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,169,101)
+end
+end
+end
+end
+end)
+local _0x18f8f2=_0xca4896:AddTab(string._0x0b19c5(84,101,108,101,112,111,114,116))
+_0x18f8f2:AddButton(string._0x0b19c5(83,112,97,119,110), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(2, 8, 115)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,83,112,97,119,110),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(83,101,99,114,101,116,32,65,114,101,97), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(1947, 2, 6191)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,83,101,99,114,101,116,32,65,114,101,97),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(84,105,110,121,32,73,115,108,97,110,100), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(-34, 7, 1903)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,84,105,110,121,32,73,115,108,97,110,100),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(70,114,111,122,101,110,32,73,115,108,97,110,100), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(-2600.00244, 3.67686558,-403.884369, 0.0873617008, 1.0482899e-09, 0.99617666, 3.07204253e-08, 1,-3.7464023e-09,-0.99617666, 3.09302628e-08, 0.0873617008)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,70,114,111,122,101,110,32,73,115,108,97,110,100),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(77,121,116,104,105,99,97,108,32,73,115,108,97,110,100), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(2255, 7, 1071)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,77,121,116,104,105,99,97,108,32,73,115,108,97,110,100),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(72,101,108,108,32,73,115,108,97,110,100), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(-6768, 7,-1287)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,72,101,108,108,32,73,115,108,97,110,100),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(76,101,103,101,110,100,32,73,115,108,97,110,100), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(4604, 991,-3887)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,76,101,103,101,110,100,32,73,115,108,97,110,100),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(77,117,115,99,108,101,32,75,105,110,103,32,73,115,108,97,110,100), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(-8646, 17,-5738)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,77,117,115,99,108,101,32,75,105,110,103),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(74,117,110,103,108,101,32,73,115,108,97,110,100), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(-8659, 6, 2384)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,74,117,110,103,108,101,32,73,115,108,97,110,100),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(66,114,97,119,108,32,76,97,118,97), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(4471, 119,-8836)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,66,114,97,119,108,32,76,97,118,97),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(66,114,97,119,108,32,68,101,115,101,114,116), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(960, 17,-7398)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,66,114,97,119,108,32,68,101,115,101,114,116),
+Duration=0
+})
+end)
+_0x18f8f2:AddButton(string._0x0b19c5(66,114,97,119,108,32,82,101,103,117,108,97,114), function()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+local _0x8ad27a=_0x0ac160:WaitForChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+_0x8ad27a.CFrame=CFrame._0x22c44f(-1849, 20,-6335)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(84,101,108,101,116,114,97,110,115,112,111,114,116,101),
+Text=string._0x0b19c5(84,101,108,101,112,111,114,116,101,100,32,116,111,32,66,114,97,119,108,32,82,101,103,117,108,97,114),
+Duration=0
+})
+end)
+local Misc=_0xca4896:AddTab(string._0x0b19c5(77,105,115,99))
+local _0x2ac40b=true
+Misc:AddButton(string._0x0b19c5(65,110,116,105,32,65,102,107), function(_0x8fc4d8)
+_0x2ac40b=_0x8fc4d8
+if _0x8fc4d8 then
+_0x09d7af()
+else
+if _0x10fd11 then
+_0x10fd11:Disconnect()
+_0x10fd11=nil
+print(string._0x0b19c5(65,110,116,105,45,65,70,75,32,115,121,115,116,101,109,32,100,105,115,97,98,108,101,100))
+end
+end
+end, true)
+local _0x77893e=Misc:AddSwitch(string._0x0b19c5(76,111,99,107,32,80,111,115,105,116,105,111,110), function(Value)
+if Value then
+local _0x8ad9e0=game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+getgenv()._0xe26fbd=game:GetService(string._0x0b19c5(82,117,110,83,101,114,118,105,99,101)).Heartbeat:Connect(function()
+if game.Players.LocalPlayer.Character:FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=_0x8ad9e0
+end
+end)
+else
+if getgenv()._0xe26fbd then
+getgenv()._0xe26fbd:Disconnect()
+getgenv()._0xe26fbd=nil
+end
+end
+end)
+Misc:AddSwitch(string._0x0b19c5(65,110,116,105,32,75,110,111,99,107,98,97,99,107), function(Value)
+if Value then
+local _0x2ba261=game.Players.LocalPlayer.Name
+local _0x3b4d56=game.Workspace:FindFirstChild(_0x2ba261):FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+local _0x46e61a=Instance._0x22c44f(string._0x0b19c5(66,111,100,121,86,101,108,111,99,105,116,121))
+_0x46e61a.MaxForce=Vector3._0x22c44f(100000, 0, 100000)
+_0x46e61a.Velocity=Vector3._0x22c44f(0, 0, 0)
+_0x46e61a.P=1250
+_0x46e61a.Parent=_0x3b4d56
+else
+local _0x2ba261=game.Players.LocalPlayer.Name
+local _0x3b4d56=game.Workspace:FindFirstChild(_0x2ba261):FindFirstChild(string._0x0b19c5(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+local _0xc87e1f=_0x3b4d56:FindFirstChild(string._0x0b19c5(66,111,100,121,86,101,108,111,99,105,116,121))
+if _0xc87e1f and _0xc87e1f.MaxForce==Vector3._0x22c44f(100000, 0, 100000) then
+_0xc87e1f:Destroy()
+end
+end
+end)
+Misc:AddButton(string._0x0b19c5(82,101,109,111,118,101,32,80,111,114,116,97,108,115), function()
+for _, _0xa7a3c6 in pairs(game:GetDescendants()) do
+if _0xa7a3c6.Name==string._0x0b19c5(82,111,98,108,111,120,70,111,114,119,97,114,100,80,111,114,116,97,108,115)then
+_0xa7a3c6:Destroy()
+end
+end
+if _G.AdRemovalConnection then
+_G.AdRemovalConnection:Disconnect()
+end
+_G.AdRemovalConnection=game.DescendantAdded:Connect(function(_0x7d6c50)
+if _0x7d6c50.Name==string._0x0b19c5(82,111,98,108,111,120,70,111,114,119,97,114,100,80,111,114,116,97,108,115)then
+_0x7d6c50:Destroy()
+end
+end)
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(65,110,117,110,99,105,111,115,32,69,108,105,109,105,110,97,100,111,115),
+Text=string._0x0b19c5(76,111,115,32,97,110,117,110,99,105,111,115,32,100,101,32,82,111,98,108,111,120,32,104,97,110,32,115,105,100,111,32,101,108,105,109,105,110,97,100,111,115),
+Duration=0
+})
+end)
+local _0xa39f13=Misc:AddDropdown(string._0x0b19c5(67,104,97,110,103,101,32,84,105,109,101), function(_0xecef35)
+local _0x70bf73=game:GetService(string._0x0b19c5(76,105,103,104,116,105,110,103))
+if _0xecef35==string._0x0b19c5(78,105,103,104,116)then
+_0x70bf73.ClockTime=0
+elseif _0xecef35==string._0x0b19c5(68,97,121)then
+_0x70bf73.ClockTime=12
+elseif _0xecef35==string._0x0b19c5(77,105,100,110,105,103,104,116)then
+_0x70bf73.ClockTime=6
+end
+game:GetService(string._0x0b19c5(83,116,97,114,116,101,114,71,117,105)):SetCore(string._0x0b19c5(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110), {
+Title=string._0x0b19c5(72,111,114,97,32,67,97,109,98,105,97,100,97),
+Text=string._0x0b19c5(76,97,32,104,111,114,97,32,100,101,108,32,100,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162,195,162,194,130,194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,32,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,162,195,162,194,128,194,158,195,130,194,162,195,131,194,131,195,134,194,146) .. string._0x0b19c5(195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,32,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,130,195,130,194,172,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133,194,190,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194) .. string._0x0b19c5(134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162,195,162,194,130,194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,130,195,130,194,172,32,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,162,195,131,194,131) .. string._0x0b19c5(195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,133,195,130,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,172,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,133,195,130,194,190,195,131,194,131,195,162,194,128,194,154,195,131,194,130) .. string._0x0b19c5(195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162,195,162,194,130,194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,32,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,162,195,162,194,128,194,158,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194) .. string._0x0b19c5(153,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,133,195,130,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,172,32,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162,195,162,194,130) .. string._0x0b19c5(194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133) .. string._0x0b19c5(194,161,195,131,194,130,195,130,194,172,195,131,194,131,195,162,194,128,194,166,195,131,194,130,195,130,194,161,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,172,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162) .. string._0x0b19c5(195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,130,195,130,194,172,195,131,194,131,195,162,194,128,194,166,195,131,194,130,195,130,194,190,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162) .. string._0x0b19c5(195,162,194,130,194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,32,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,162,195,162,194,128,194,158,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,32,195,131,194,131,195,134,194,146,195,131,194,130) .. string._0x0b19c5(195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,130,195,130,194,172,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133,194,190,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162,195,162,194,130,194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,162) .. string._0x0b19c5(195,162,194,130,194,172,195,133,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,130,195,130,194,172,195,131,194,131,195,162,194,128,194,166) .. string._0x0b19c5(195,131,194,130,195,130,194,161,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,172,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,130,195,130,194,166,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131) .. string._0x0b19c5(194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,161,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162,195,162,194,130,194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,32,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,162,195,162,194,128,194,158,195,130,194,162,195,131,194,131,195) .. string._0x0b19c5(134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,162,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,133,195,130,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,172,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,195,130,194,166,195,131,194) .. string._0x0b19c5(131,195,162,194,128,194,154,195,131,194,130,195,130,194,161,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,162,194,128,194,160,195,131,194,162,195,162,194,130,194,172,195,162,194,132,194,162,195,131,194,131,195,134,194,146,195,131,194,130,195,130,194,162,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,130,195,130,194,172,195,131,194,131,195,162,194,128,194,166,195,131,194,130,195) .. string._0x0b19c5(130,194,161,195,131,194,131,195,134,194,146,195,131,194,134,195,162,194,128,194,153,195,131,194,131,195,130,194,162,195,131,194,162,195,162,194,128,194,154,195,130,194,172,195,131,194,133,195,130,194,161,195,131,194,131,195,134,194,146,195,131,194,162,195,162,194,130,194,172,195,133,194,161,195,131,194,131,195,162,194,128,194,154,195,131,194,130,195,130,194,173,97,32,104,97,32,115,105,100,111,32,99,97,109,98,105,97,100,97,32,97,58,32).. _0xecef35,
+Duration=0
+})
+end)
+_0xa39f13:Add(string._0x0b19c5(78,105,103,104,116))
+_0xa39f13:Add(string._0x0b19c5(68,97,121))
+_0xa39f13:Add(string._0x0b19c5(77,105,100,110,105,103,104,116))
+Misc:AddSwitch(string._0x0b19c5(65,117,116,111,32,70,111,114,116,117,110,101,32,87,104,101,101,108), function(Value)
+_G._0x1f5462=Value
+if Value then
+local function _0x12e629()
+while _G._0x1f5462 do
+local _0x29a5b2={
+[1]=string._0x0b19c5(111,112,101,110,70,111,114,116,117,110,101,87,104,101,101,108),
+[2]=game:GetService(string._0x0b19c5(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101)):WaitForChild(string._0x0b19c5(102,111,114,116,117,110,101,87,104,101,101,108,67,104,97,110,99,101,115)):WaitForChild(string._0x0b19c5(70,111,114,116,117,110,101,32,87,104,101,101,108))
+}
+game:GetService(string._0x0b19c5(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101)):WaitForChild(string._0x0b19c5(114,69,118,101,110,116,115)):WaitForChild(string._0x0b19c5(111,112,101,110,70,111,114,116,117,110,101,87,104,101,101,108,82,101,109,111,116,101)):InvokeServer(unpack(_0x29a5b2))
+wait(0)
+end
+end
+coroutine._0x0ab576(_0x12e629)()
+else
+_G._0x1f5462=false
+end
+end)
+local _0x2a6f26=false
+Misc:AddSwitch(string._0x0b19c5(71,111,100,32,77,111,100,101,32,40,66,114,97,119,108,41), function(State)
+_0x2a6f26=State
+if State then
+task.spawn(function()
+while _0x2a6f26 do
+game:GetService(string._0x0b19c5(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101))._0x2fffce._0xb743b7:FireServer(string._0x0b19c5(106,111,105,110,66,114,97,119,108))
+task.wait(0)
+end
+end)
+end
+end)
+local _0x4c135f={}
+local _0x0c69fc=2048
+local _0x83164a=50000
+local _0xc1b33c=Vector3._0x22c44f(-2,-9.5,-2)
+local _0x300af0=math._0x501737(_0x83164a/_0x0c69fc)
+local function _0xa49214()
+for x=0, _0x300af0-1 do
+for z=0, _0x300af0-1 do
+local _0x69acad=Instance._0x22c44f(string._0x0b19c5(80,97,114,116))
+_0x69acad.Size=Vector3._0x22c44f(_0x0c69fc, 1, _0x0c69fc)
+_0x69acad.Position=_0xc1b33c+Vector3._0x22c44f(x*_0x0c69fc, 0, z*_0x0c69fc)
+_0x69acad.Anchored=true
+_0x69acad.Transparency=1
+_0x69acad.CanCollide=true
+_0x69acad.Name=string._0x0b19c5(80,97,114,116,95,83,105,100,101,95).. x ..string._0x0b19c5(95).. z
+_0x69acad.Parent=workspace
+table._0xc55c35(_0x4c135f, _0x69acad)
+local _0x7d9c88=Instance._0x22c44f(string._0x0b19c5(80,97,114,116))
+_0x7d9c88.Size=Vector3._0x22c44f(_0x0c69fc, 1, _0x0c69fc)
+_0x7d9c88.Position=_0xc1b33c+Vector3._0x22c44f(-x*_0x0c69fc, 0, z*_0x0c69fc)
+_0x7d9c88.Anchored=true
+_0x7d9c88.Transparency=1
+_0x7d9c88.CanCollide=true
+_0x7d9c88.Name=string._0x0b19c5(80,97,114,116,95,76,101,102,116,82,105,103,104,116,95).. x ..string._0x0b19c5(95).. z
+_0x7d9c88.Parent=workspace
+table._0xc55c35(_0x4c135f, _0x7d9c88)
+local _0xf21ac3=Instance._0x22c44f(string._0x0b19c5(80,97,114,116))
+_0xf21ac3.Size=Vector3._0x22c44f(_0x0c69fc, 1, _0x0c69fc)
+_0xf21ac3.Position=_0xc1b33c+Vector3._0x22c44f(-x*_0x0c69fc, 0,-z*_0x0c69fc)
+_0xf21ac3.Anchored=true
+_0xf21ac3.Transparency=1
+_0xf21ac3.CanCollide=true
+_0xf21ac3.Name=string._0x0b19c5(80,97,114,116,95,85,112,76,101,102,116,95).. x ..string._0x0b19c5(95).. z
+_0xf21ac3.Parent=workspace
+table._0xc55c35(_0x4c135f, _0xf21ac3)
+local _0x04a6fe=Instance._0x22c44f(string._0x0b19c5(80,97,114,116))
+_0x04a6fe.Size=Vector3._0x22c44f(_0x0c69fc, 1, _0x0c69fc)
+_0x04a6fe.Position=_0xc1b33c+Vector3._0x22c44f(x*_0x0c69fc, 0,-z*_0x0c69fc)
+_0x04a6fe.Anchored=true
+_0x04a6fe.Transparency=1
+_0x04a6fe.CanCollide=true
+_0x04a6fe.Name=string._0x0b19c5(80,97,114,116,95,85,112,82,105,103,104,116,95).. x ..string._0x0b19c5(95).. z
+_0x04a6fe.Parent=workspace
+table._0xc55c35(_0x4c135f, _0x04a6fe)
+end
+end
+end
+local function _0xe979b3()
+for _, _0x4cf5f6 in ipairs(_0x4c135f) do
+if _0x4cf5f6 and _0x4cf5f6.Parent then
+_0x4cf5f6.CanCollide=false
+end
+end
+end
+local function _0xe50214()
+for _, _0x4cf5f6 in ipairs(_0x4c135f) do
+if _0x4cf5f6 and _0x4cf5f6.Parent then
+_0x4cf5f6.CanCollide=true
+end
+end
+end
+Misc:AddSwitch(string._0x0b19c5(70,117,108,108,32,87,97,108,107,32,111,110,32,87,97,116,101,114), function(_0x8fc4d8)
+if _0x8fc4d8 then
+_0xa49214()
+else
+_0xe979b3()
+end
+end)
+Misc:AddLabel(string._0x0b19c5(85,115,101,102,117,108,108))
+local _0x080e46=false
+local _0x1d48dd={
+string._0x0b19c5(85,76,84,82,65,32,83,104,97,107,101),
+string._0x0b19c5(84,79,85,71,72,32,66,97,114),
+string._0x0b19c5(80,114,111,116,101,105,110,32,83,104,97,107,101),
+string._0x0b19c5(69,110,101,114,103,121,32,83,104,97,107,101),
+string._0x0b19c5(80,114,111,116,101,105,110,32,66,97,114),
+string._0x0b19c5(69,110,101,114,103,121,32,66,97,114),
+string._0x0b19c5(84,114,111,112,105,99,97,108,32,83,104,97,107,101)
+}
+local function _0x158f33()
+local _0x65d7cf=game.Players.LocalPlayer
+local _0x098fb0=_0x65d7cf:WaitForChild(string._0x0b19c5(66,97,99,107,112,97,99,107))
+local _0x0ac160=_0x65d7cf.Character or _0x65d7cf.CharacterAdded:Wait()
+for _, _0xc0540e in ipairs(_0x1d48dd) do
+local _0x0b6e75=_0x098fb0:FindFirstChild(_0xc0540e)
+while _0x0b6e75 do
+_0x0b6e75.Parent=_0x0ac160
+pcall(function()
+_0x0b6e75:Activate()
+end)
+task.wait(0)
+_0x0b6e75=_0x098fb0:FindFirstChild(_0xc0540e)
+end
+end
+end
+task.spawn(function()
+while true do
+if _0x080e46 then
+_0x158f33()
+task.wait(2)
+else
+task.wait(1)
+end
+end
+end)
+Misc:AddSwitch(string._0x0b19c5(65,117,116,111,32,67,108,101,97,114,32,73,110,118,101,110,116,111,114,121), function(_0x3f774b)
+_0x080e46=_0x3f774b
+end)
+local _0x8eb2ea=_0xca4896:AddTab(string._0x0b19c5(67,114,101,100,105,116,115))
+_0x8eb2ea:AddLabel(string._0x0b19c5(90,84,88,32,83,85,67,75,83,32,68,73,67,75,32,76))
